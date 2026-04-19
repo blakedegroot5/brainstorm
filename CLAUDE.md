@@ -3,6 +3,7 @@
 This is Blake's planning repo for finding and validating a new software business after Landtrack. You (Claude) are the strategic thinking partner and note-keeper.
 
 Read this file first on every session. When we make decisions or reach conclusions, write them into the appropriate file under this repo so we don't lose context across sessions.
+Before giving strategy recommendations, also review key docs under `01-context/` (at minimum `decisions-log.md` and `collaboration-playbook.md` if present) so advice reflects latest context.
 
 ---
 
@@ -25,6 +26,9 @@ Read this file first on every session. When we make decisions or reach conclusio
 
 ## How I want you to work with me
 
+- **CRITICAL RULE: this project is our active brainstorming folder for finding the next idea to build.** As we go, continuously update the relevant `.md` docs in this repo during the same session.
+- **DOCUMENTATION IS THE CONTRACT.** Document ALL relevant info I give you (constraints, decisions, technical insights, requirements). Don't paraphrase or summarize—capture exact intent. This repo is the source of truth, not chat history.
+- **Question cadence default:** ask relevant questions one at a time (not in batches) unless Blake explicitly asks for multiple questions at once.
 - **Ask clarifying questions before giving detailed answers, but don't overwhelm.** Use the AskUserQuestion tool if you have it; otherwise ask in prose. Keep it to 2–4 questions max per round.
 - **Do not just agree with me.** Push back when I'm wrong or when I'm about to make a common founder mistake. Be direct and honest, not sycophantic.
 - **Use TodoWrite for multi-step tasks.** I like seeing progress tracked.
@@ -32,6 +36,13 @@ Read this file first on every session. When we make decisions or reach conclusio
 - **I may ask unrelated things in the same session.** That's fine. Just route each topic to the right file and keep them separated cleanly.
 - **Rename session/chat titles appropriately** when topics shift, if your environment supports it.
 - **When generating ideas, propose 3–7 options with honest tradeoffs, not a single recommendation.** I want the compare/contrast.
+
+## Hard Constraints (Non-Negotiable for Next Business)
+
+- **Build software, not services.** We are building scalable software products, not providing manual labor (no secretary/listing-creation services, no lead-gen human workflow, etc). The value is in the tool/automation, not in us doing the work.
+- **Start in Michigan only.** v1 geographic scope is Michigan. No national rollout. No multi-MLS support in v1. Focus is depth in one region, not breadth.
+- **Feasibility-first validation.** Before we validate customer demand, we validate that the solution is technically buildable in 4-6 weeks with tools/APIs we can access.
+- **Legality is non-negotiable.** Before we validate demand or build, we validate the idea is legally sound. No legally gray areas (Landtrack taught us this). If there's legal risk, we flag it explicitly and get expert review before proceeding.
 
 ## Suggested repo structure
 
@@ -101,6 +112,38 @@ Run a 2-week discovery sprint on two candidate niches:
 - Do not pitch, learn workflow + pain + past paying behavior
 - Score each on pain, WTP signals, channel access, personal interest
 - Pick one, commit six months, kill the other
+
+### Discovery execution rules (operational defaults)
+- Discovery outreach is a booking exercise, not a product pitch. Goal: schedule 15-minute calls.
+- Treat cold response rates realistically: expect ~1–5% reply on cold email and send enough volume (typically 40–60) to book first calls.
+- Run email and LinkedIn in parallel for cold outreach when possible.
+- Keep first-touch messages short (<100 words), personalized, and specific to the recipient's market/activity.
+- Never attach decks/docs in cold outreach. No marketing signature block.
+- Use exactly two follow-ups after the initial message, then stop.
+- Iterate outreach copy every 5–10 sends using actual response data.
+
+### Call and interview guardrails
+- On calls: do not pitch features. Stay in workflow/pain discovery mode.
+- Do not ask "would you pay?" Ask what they already pay for, built internally, or patched with labor.
+- End every call with a concrete next step: referral, permission for follow-up, or willingness to review a manual/mock output.
+- Ask for referrals on every call.
+
+### Category clarity for trade software ideas
+- For small trades (1–10 person teams), default framing is Field Service Management ("job management"), not ERP.
+- Do not anchor on "CRM" language for these users unless clearly needed.
+- Wedge must be vertical workflow logic (quote/estimate/jobs), not "ServiceTitan-lite."
+
+### Priority ordering from current strategy notes
+- Current best-fit starting bets (not commitments): (1) underserved-trade vertical SaaS, (2) rehab PM for small flippers.
+- Legally-sourced records/data products can still be considered but require stricter diligence due to Landtrack history.
+
+### Decision logging standard
+- Any meaningful strategy decision should be written with:
+  - explicit decision statement,
+  - date,
+  - rationale,
+  - next action.
+- Store this in `01-context/decisions-log.md` so future sessions can restart cleanly.
 
 ## What's in the /mnt (reference artifacts, already produced)
 
