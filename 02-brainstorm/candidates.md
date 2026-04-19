@@ -44,10 +44,10 @@
     - ✅ **CLEARED:** Real estate broker license NOT required (workflow software ≠ real estate services)
     - ✅ **CLEARED:** Fair Housing risk manageable (we don't make listing decisions)
 - **Docs:**
-  - [real-estate-office-workflow-expansion.md](./real-estate-office-workflow-expansion.md) (FULL PRODUCT HYPOTHESIS)
-  - [real-estate-mls-listing-automation.md](./real-estate-mls-listing-automation.md) (original MLS auto-fill hypothesis)
-  - [flexmls-api-research.md](./flexmls-api-research.md) (technical feasibility)
-  - [real-estate-competitor-analysis.md](./real-estate-competitor-analysis.md) (MLS tool competitive landscape)
+  - [real-estate-office-workflow-expansion.md](./mls-listing-automation/real-estate-office-workflow-expansion.md) (FULL PRODUCT HYPOTHESIS)
+  - [real-estate-mls-listing-automation.md](./mls-listing-automation/real-estate-mls-listing-automation.md) (original MLS auto-fill hypothesis)
+  - [flexmls-api-research.md](./mls-listing-automation/flexmls-api-research.md) (technical feasibility)
+  - [real-estate-competitor-analysis.md](./mls-listing-automation/real-estate-competitor-analysis.md) (MLS tool competitive landscape)
 
 ## Shelved / Rejected
 

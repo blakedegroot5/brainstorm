@@ -42,10 +42,10 @@ The "wedge" is integrating **Vendor Scheduling + Payments + Media Management** w
 
 *   **Strategy Snapshot:** `01-context/current-strategy-snapshot.md`
 *   **Decisions Log:** `01-context/decisions-log.md`
-*   **Candidate Idea:** `02-brainstorm/real-estate-office-workflow-expansion.md`
-*   **Competitor Analysis:** `02-brainstorm/real-estate-competitor-analysis.md`
-*   **Architecture Sketch:** `02-brainstorm/system-architecture-sketch.md`
+*   **Candidate Idea:** `02-brainstorm/mls-listing-automation/real-estate-office-workflow-expansion.md`
+*   **Competitor Analysis:** `02-brainstorm/mls-listing-automation/real-estate-competitor-analysis.md`
+*   **Architecture Sketch:** `02-brainstorm/mls-listing-automation/system-architecture-sketch.md`
 *   **Realtor Pain Points Research:** `03-discovery/2026-04-19-market-research-realtor-pain-points.md`
-*   **Agent Analysis & Feedback:** `02-brainstorm/agent-analysis-and-feedback.md`
+*   **Agent Analysis & Feedback:** `02-brainstorm/mls-listing-automation/agent-analysis-and-feedback.md`
 
 **All changes are pushed to GitHub.** The repository is the single source of truth.
