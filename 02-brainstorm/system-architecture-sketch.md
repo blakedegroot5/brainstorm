@@ -473,27 +473,25 @@ If all four validate positively, we have a buildable, defensible product.
 
 ---
 
-## 4. UI/UX Strategy: The "Sidecar" Interface
+## 4. UI/UX Strategy: The "Adaptive Sidecar"
 
-To ensure maximum stability and agent control, the primary interface for MLS data entry will be a **Chrome Extension Sidecar**.
+To ensure 100% browser compatibility (Chrome, Safari, Firefox) while maintaining a premium feel, we will implement an **Adaptive Sidecar** architecture.
 
-### **Primary: Chrome Side Panel API (The "Pinned Gutter")**
-*   **The Experience:** A dedicated, native-feeling panel that slides out from the right side of the Chrome window.
-*   **Why it wins:** 
-    *   **Native Feel:** It resizes the FlexMLS website instead of covering it up, ensuring no buttons are hidden.
-    *   **Persistence:** The panel stays open and "pinned" even as the agent navigates between different tabs or pages within FlexMLS (e.g., from "General Data" to "Media Upload").
-    *   **Reliability:** It doesn't rely on complex CSS injection into the host page, making it much more resilient to FlexMLS UI updates.
-*   **Key Feature:** "Progress Gamification"—A 0-100% completion bar that fills up as the agent clicks "Fill" buttons for each field.
+### **Tier 1: Native Pinned Gutter (Chrome & Firefox)**
+*   **Chrome:** Uses the **Side Panel API**. It resizes the FlexMLS window, creating a dedicated "gutter" that never covers website content.
+*   **Firefox:** Uses the **Sidebar Action API**. Provides a similar persistent, non-overlapping sidebar experience.
+*   **Benefit:** Maximum stability, persistence across tab navigation, and a native "Pro" feel.
 
-### **Secondary Fallback: Injected "Floating Drawer"**
-*   **The Experience:** A draggable, minimizable UI overlay that hovers over the FlexMLS page.
-*   **Usage:** Only used if the agent's browser version doesn't support the Side Panel API or if a specific workflow requires an "overlay" style (e.g., a "magnifying glass" over a specific photo).
-*   **Risk:** Can occasionally "cover up" legacy FlexMLS elements or require re-injection on page navigation.
+### **Tier 2: Injected "Floating Drawer" (Safari & Fallback)**
+*   **Safari:** Since Safari (as of 2026) lacks a native side panel API, we use a **Content Script** to "inject" the Sidecar directly into the FlexMLS page.
+*   **The Experience:** A draggable, sleek overlay that hovers over the right edge of the page. It contains the same "Click-to-Fill" and "Media Sync" buttons as the native version.
+*   **Secondary Use:** This also serves as the universal fallback for all browsers if a specific MLS portal has a layout that conflicts with the native side panel.
 
-### **The "Fill" Mechanism (Stability Priority)**
-1.  **Gold Standard (API):** If Spark API supports writes, the Sidecar sends data directly to the server. The FlexMLS page just "refreshes" with the new data.
-2.  **Silver Standard (One-Click Fill):** The Sidecar identifies the target field (e.g., `input#price`) and injects the value when the user clicks a "Fill" button in the Sidecar.
-3.  **Bronze Standard (Smart Clipboard):** If the field is too complex for injection, the "Fill" button becomes a "Copy" button, and we auto-highlight the target field in FlexMLS so the user can just hit `Cmd+V`.
+### **Tier 3: The "Fill" Mechanism (Universal)**
+Regardless of the UI "container," the core logic remains the same:
+1.  **Gold Standard (API):** Direct server-to-server sync via Spark API.
+2.  **Silver Standard (One-Click Fill):** The Sidecar identifies the target field (e.g., `input#price`) and injects the value when the user clicks "Fill."
+3.  **Bronze Standard (Smart Clipboard):** If the field is too complex, the "Fill" button becomes a "Copy" button, and we auto-highlight the target field in FlexMLS for easy `Cmd+V`.
 
 ---
 
