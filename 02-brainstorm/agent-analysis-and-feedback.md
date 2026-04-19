@@ -30,18 +30,19 @@
 
 ## 2. Feedback & Strategic Refinements
 
-### **Refinement 1: The "Photographer-First" Trojan Horse**
-Instead of selling to agents first, consider making the tool **free/low-cost for vendors (photographers)** to deliver photos. 
-*   **Why:** The photographer is the one who *creates* the data (photos, floor plans, house specs). If they deliver through our "Smart Link," the agent is forced to click it. 
-*   **The Goal:** Make the photographer our unpaid sales force.
+### **Refinement 1: The "Collaboration Hook" (Trojan Horse 2.0)**
+Instead of a sales-first target, the photographer becomes a **Distribution Agent**.
+*   **The Flow:** Realtor sends an "Upload Link" to the photographer → Photographer drops raw files → Platform auto-processes (resizes/tags/orders) → Realtor gets a "Ready to Post" notification.
+*   **Why it works:** The photographer "enters the data" by uploading, and the realtor gets the "Magic" benefit without having to change their behavior. The platform becomes the **shared workspace** for the listing prep.
 
-### **Refinement 2: Mitigation for API "Read-Only" Scenario**
-If Spark API doesn't allow writes, don't just rely on fragile DOM injection. 
-*   **The "Sidecar" UI:** Build a Chrome Extension that sits as a "Sidecar" next to the FlexMLS window. It provides "One-Click Copy" buttons for every field. It’s 90% as fast as auto-fill but 100% less likely to break when the CSS classes change.
+### **Refinement 2: The "Sidecar UI" (Stability First)**
+To mitigate API fragility (Spark API read-only or DOM changes), we build a **Sidecar Chrome Extension**.
+*   **How it works:** A floating sidebar sits next to the FlexMLS window. It contains all the extracted data (Price, Beds, AI Description) with **"Click-to-Fill"** buttons for every field.
+*   **The Benefit:** It is 100% resilient to CSS changes or API restrictions. It keeps the agent in control (reducing "fine fear") while still being 90% faster than manual typing.
 
-### **Refinement 3: Focus on "Media Integrity"**
-Market research indicates that photo ordering and "blue sky" chasing are huge pains. 
-*   **Feature Idea:** An AI that automatically detects the "Kitchen" vs "Master Bedroom" and orders them in the sequence most MLSs prefer (Exterior -> Main Level -> Upper -> Lower). This saves 15 minutes of dragging-and-dropping.
+### **Refinement 3: Media-First "Wow" Factor**
+Market research identifies "actual rage" around FlexMLS media management (resizing/ordering).
+*   **The Feature:** AI auto-detects room types and sequences them (Exterior → Main → Upper → Lower) while auto-resizing to the 3000x2000px / 15MB FlexMLS limit. This solves a 20-minute manual headache that text-only AI (Writor/ChatGPT) ignores.
 
 ---
 
