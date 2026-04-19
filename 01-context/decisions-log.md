@@ -156,8 +156,28 @@
   - Next action: Apply these constraints to all candidate ideas and MLS research.
   - Doc: Updated [CLAUDE.md](../CLAUDE.md) with hard constraints section.
 
-## 2026-04-18
+## 2026-04-19 (Today's Session)
 
-- Decision: Formally kill the Hamlet-style civic data competitor concept.
-  - Rationale: Funded competition, no structural wedge, slow-buying buyers. Geography-limited approach doesn't address the core sales cycle problem. Current strategy (concrete contractor lead-gen) is better fit.
-  - Next action: No further exploration of civic data products unless a fundamentally different wedge or buyer emerges.
+- Decision: Realtor pain point research validates "actual rage" around media management and manual MLS entry.
+  - Rationale: Reddit and forum analysis confirms that photo resizing/ordering is a major bottleneck (20-30 mins per listing) and that "administrative friction" keeps agents from selling.
+  - Next action: Use these specific "rage" points (photo management, double entry) as the hook in the upcoming discovery call.
+  - Doc: [03-discovery/2026-04-19-market-research-realtor-pain-points.md](../03-discovery/2026-04-19-market-research-realtor-pain-points.md)
+
+- Decision: Refine the "Trojan Horse" strategy into the "Collaboration Hook" (Trojan Horse 2.0).
+  - Rationale: Instead of selling to photographers, use the photographer's upload link as the data source. The realtor sends the link, the photographer uploads raw files, and the platform "cleans" them (resizes/orders) for the MLS. Realtor gets the magic benefit for free.
+  - Next action: Validate this flow with both the solo agent (friend) and the office admin.
+  - Doc: [02-brainstorm/agent-analysis-and-feedback.md](../02-brainstorm/agent-analysis-and-feedback.md)
+
+- Decision: Prioritize "Chrome Side Panel API" for the Sidecar UI, with an "Adaptive" fallback for Safari/Firefox.
+  - Rationale: Side Panel API (Chrome/FF) provides a native, persistent "gutter" that resizes the page content instead of covering it up. Safari will use an "Injected Drawer" (overlay) since it lacks the native API.
+  - Next action: Ensure architecture design supports both "native gutter" and "injected overlay" models.
+  - Doc: [02-brainstorm/system-architecture-sketch.md](../02-brainstorm/system-architecture-sketch.md)
+
+- Decision: Deep dive competitor research reveals Ocusell as a direct "auto-fill" threat, but identifies a "Unified Workflow" gap.
+  - Rationale: Ocusell does multi-MLS entry but lacks vendor scheduling. Aryeo does media management but lacks MLS entry. Nobody integrates **Scheduling + Payments + Media + MLS Auto-Fill**.
+  - Next action: Position the product as the "Prep to Post" bridge.
+  - Doc: [02-brainstorm/real-estate-competitor-analysis.md](../02-brainstorm/real-estate-competitor-analysis.md)
+
+- Decision: Commit and push all progress to GitHub for persistent context.
+  - Rationale: Session memory is ephemeral; the repository must be the source of truth for the next agent/session.
+  - Next action: Maintain git hygiene and push at the end of every major strategy/research block.
