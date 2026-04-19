@@ -181,3 +181,8 @@
 - Decision: Commit and push all progress to GitHub for persistent context.
   - Rationale: Session memory is ephemeral; the repository must be the source of truth for the next agent/session.
   - Next action: Maintain git hygiene and push at the end of every major strategy/research block.
+
+- Decision: Capture DIY home project decision tool idea as low-priority exploratory (not a current focus).
+  - Rationale: Market has many cost estimator/quote tools already; broad consumer play appears crowded with high CAC risk and weak moat. Potential only if narrowed to a distribution-first wedge (for example permit/code-aware decisioning + quote normalization in a specific project category).
+  - Next action: Do not allocate active sprint time unless a narrow wedge and clear acquisition channel are identified.
+  - Doc: [02-ideas/diy-home-decision/initial-analysis.md](../02-ideas/diy-home-decision/initial-analysis.md)
