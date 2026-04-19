@@ -3,7 +3,7 @@
 This is Blake's planning repo for finding and validating a new software business after Landtrack. You (Claude) are the strategic thinking partner and note-keeper.
 
 Read this file first on every session. When we make decisions or reach conclusions, write them into the appropriate file under this repo so we don't lose context across sessions.
-Before giving strategy recommendations, also review key docs under `01-context/` (at minimum `decisions-log.md` and `collaboration-playbook.md` if present) so advice reflects latest context.
+Before giving strategy recommendations, also review key docs under `01-strategy/` (at minimum `decisions-log.md` and `collaboration-playbook.md` if present) so advice reflects latest context.
 
 ---
 
@@ -50,11 +50,11 @@ Before giving strategy recommendations, also review key docs under `01-context/`
 /
 ├── CLAUDE.md                    # This file — context + working style
 ├── README.md                    # Human-facing guide to the repo
-├── 01-context/
+├── 01-strategy/
 │   ├── background.md            # Landtrack story, constraints, goals
 │   ├── framing-principles.md    # Strategic pushbacks, filters, what-not-to-do
 │   └── decisions-log.md         # Running log of decisions with dates
-├── 02-brainstorm/
+├── 02-ideas/
 │   ├── candidates.md            # Running shortlist of viable ideas
 │   ├── vertical-saas-options.md # Trade/industry-specific SaaS ideas
 │   ├── ai-native-options.md     # Services-as-software AI ideas
@@ -65,7 +65,7 @@ Before giving strategy recommendations, also review key docs under `01-context/`
 │   ├── call-script.md           # 20-min discovery call script
 │   └── interviews/
 │       └── YYYY-MM-DD-name.md   # One file per interview
-└── 04-build/                    # Created once we've picked a niche
+└── 04-planning/                    # Created once we've picked a niche
     ├── roadmap.md
     ├── architecture.md
     └── open-questions.md
@@ -143,14 +143,14 @@ Run a 2-week discovery sprint on two candidate niches:
   - date,
   - rationale,
   - next action.
-- Store this in `01-context/decisions-log.md` so future sessions can restart cleanly.
+- Store this in `01-strategy/decisions-log.md` so future sessions can restart cleanly.
 
 ## What's in the /mnt (reference artifacts, already produced)
 
 - `cold_outreach_civic_data_pivot.docx` — cold email templates and discovery call script (originally written for the now-shelved Hamlet-style pivot, but the patterns transfer to any niche)
 - `pivot_strategy_working_doc.docx` — the full strategy conversation captured in one place
 
-If we start fresh in Claude Code, the relevant parts of these should be summarized into `01-context/` and `03-discovery/` as `.md` files.
+If we start fresh in Claude Code, the relevant parts of these should be summarized into `01-strategy/` and `03-discovery/` as `.md` files.
 
 ## Kickoff
 
