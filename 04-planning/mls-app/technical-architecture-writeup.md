@@ -215,3 +215,7 @@ Status: Implementation-oriented architecture write-up (pre-build)
 - End-to-end audit log for every autofill action.
 - Failure handling and basic monitoring in place.
 - Documented fallback behavior for unmapped/failed fields.
+
+## Related execution doc
+
+- [mvp-build-ticket-plan.md](./mvp-build-ticket-plan.md) — week-by-week MVP ticket plan with acceptance criteria.
