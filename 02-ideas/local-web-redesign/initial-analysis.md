@@ -41,14 +41,37 @@ There is a massive "Tail" of local Michigan small-to-medium businesses (SMBs) ru
 
 ---
 
-## 5. Alignment with "Fast Cashflow"
-*   **Pros:** High upfront payments ($2k - $10k per project).
-*   **Cons:** High "Founder Time" requirement. Might distract from the MLS App which has higher long-term "Software" leverage.
+## 5. The Reframed Model (Photos + AI Build + Hosting SaaS)
+
+**Core Insight:** This is **photographer + AI site builder + hosting provider**, not a design agency.
+
+### Workflow:
+1. **Initial Engagement:** "I shoot professional photos of your work (drone + ground) + build a modern site"
+2. **Initial Fee:** $2-5k (photos + AI-built site + setup)
+3. **Monthly:** $150-300/mo (hosting + maintenance + updates)
+4. **Effort:** ~5-10 hours per site (photos + AI build). Then "set and forget" with minimal maintenance.
+
+### Revenue Model:
+- **Quick cashflow:** $2-5k per client upfront
+- **MRR path:** 25 clients × $200/mo = $5k MRR
+- **Scalability:** AI-leveraged (Cursor, Claude API) + template hosting, not hiring-dependent
+
+### Feasibility:
+✅ Technically viable (AI coding tools handle 80% of dev work)
+✅ Leverages existing skill (photography is the moat)
+✅ Recurring revenue component = closer to "software" than pure services
+❓ "Set and forget" assumption — need to validate how much ongoing maintenance is really needed
 
 ---
 
-## 6. Next Steps / Validation
-1.  [ ] **Lead Gen:** Verify contact info for the "Top 8" no-website shops (Cooper, East River, H D Tool, etc.).
-2.  [ ] **Outreach:** Send a physical "Audit Card" or direct email focusing on their local reputation and the "Digital Front Door" gap.
-3.  [ ] **The Pitch:** Create a 1-page "Before/After" (Directory vs. Modern Mockup).
-4.  [ ] **Determine Focus:** Is this a **Primary Business** or a **Funding Mechanism** for the MLS App?
+## 6. Validation & Next Steps
+
+**CRITICAL VALIDATION:** Does the monthly subscription model work?
+- Assumption: "These businesses don't demand much maintenance"
+- Reality check: Test with 1 warm lead first. Offer initial build + 3-month subscription. Measure actual support load.
+
+### Immediate Actions:
+1.  [ ] **Call 1-2 low-hanging fruit** (see West Michigan lead list) with this pitch: "I shoot your work + build a modern site. $3k upfront, $200/mo for hosting + updates."
+2.  [ ] **Gauge reaction:** Do they see value in recurring cost? Or expect "one-time" build?
+3.  [ ] **If positive:** Build one site as proof-of-concept. Measure actual monthly effort.
+4.  [ ] **Decide:** Is this a primary business (needs 20-30 clients to scale) or a 6-week cashflow sprint?
