@@ -161,7 +161,7 @@
 - Decision: Realtor pain point research validates "actual rage" around media management and manual MLS entry.
   - Rationale: Reddit and forum analysis confirms that photo resizing/ordering is a major bottleneck (20-30 mins per listing) and that "administrative friction" keeps agents from selling.
   - Next action: Use these specific "rage" points (photo management, double entry) as the hook in the upcoming discovery call.
-  - Doc: [03-discovery/2026-04-19-market-research-realtor-pain-points.md](../03-discovery/2026-04-19-market-research-realtor-pain-points.md)
+  - Doc: [03-discovery/mls-listing-automation/2026-04-19-market-research-realtor-pain-points.md](../03-discovery/mls-listing-automation/2026-04-19-market-research-realtor-pain-points.md)
 
 - Decision: Refine the "Trojan Horse" strategy into the "Collaboration Hook" (Trojan Horse 2.0).
   - Rationale: Instead of selling to photographers, use the photographer's upload link as the data source. The realtor sends the link, the photographer uploads raw files, and the platform "cleans" them (resizes/orders) for the MLS. Realtor gets the magic benefit for free.
