@@ -1,0 +1,125 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Browser Window -->
+  <rect x="0" y="0" width="1200" height="800" fill="#f4f7f9" rx="10" />
+  <rect x="0" y="0" width="1200" height="40" fill="#e0e4e8" rx="10" ry="10" />
+  <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
+  <circle cx="60" cy="20" r="6" fill="#27c93f" />
+  <rect x="100" y="10" width="800" height="20" fill="white" rx="10" />
+  <text x="110" y="25" font-family="Arial, sans-serif" font-size="12" fill="#666">flexmls.com/listing/edit/123-main-st</text>
+
+  <!-- Main Content: FlexMLS Form (Simplified/Legacy) -->
+  <rect x="20" y="60" width="840" height="720" fill="white" stroke="#d1d5db" stroke-width="1" rx="4" />
+  <text x="40" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#111827">Add New Listing - Residential</text>
+  
+  <!-- Form Fields -->
+  <g transform="translate(40, 140)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">List Price *</text>
+    <rect x="0" y="10" width="250" height="35" fill="white" stroke="#d1d5db" rx="4" />
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="16" fill="#9ca3af">$ 0.00</text>
+    
+    <text x="300" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Property Type *</text>
+    <rect x="300" y="10" width="250" height="35" fill="white" stroke="#d1d5db" rx="4" />
+    <text x="310" y="32" font-family="Arial, sans-serif" font-size="16" fill="#111827">Single Family Residence</text>
+  </g>
+
+  <g transform="translate(40, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Bedrooms</text>
+    <rect x="0" y="10" width="100" height="35" fill="white" stroke="#d1d5db" rx="4" />
+    
+    <text x="120" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Baths - Full</text>
+    <rect x="120" y="10" width="100" height="35" fill="white" stroke="#d1d5db" rx="4" />
+    
+    <text x="240" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Baths - Half</text>
+    <rect x="240" y="10" width="100" height="35" fill="white" stroke="#d1d5db" rx="4" />
+  </g>
+
+  <g transform="translate(40, 300)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#374151">Public Remarks (MLS Copy)</text>
+    <rect x="0" y="10" width="760" height="150" fill="white" stroke="#d1d5db" rx="4" />
+    <text x="10" y="35" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af">Paste your description here...</text>
+  </g>
+
+  <!-- The SIDECAR (Modern UI) -->
+  <rect x="880" y="40" width="320" height="760" fill="#ffffff" filter="url(#shadow)" />
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+      <feOffset dx="0" dy="0" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sidecar Header -->
+  <rect x="880" y="40" width="320" height="70" fill="#0066ff" />
+  <text x="900" y="85" font-family="Segoe UI, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="white">MLS App Sidecar</text>
+  <circle cx="1170" cy="75" r="10" fill="white" fill-opacity="0.2" />
+  <text x="1165" y="80" font-family="Arial" font-size="12" fill="white">?</text>
+
+  <!-- Listing Selection -->
+  <g transform="translate(900, 130)">
+    <rect x="0" y="0" width="280" height="80" fill="#f8fafc" stroke="#e2e8f0" rx="8" />
+    <rect x="10" y="10" width="60" height="60" fill="#cbd5e1" rx="4" /> <!-- Property Image Placeholder -->
+    <text x="80" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">4221 Richmond St NW</text>
+    <text x="80" y="50" font-family="Arial" font-size="12" fill="#64748b">Draft Listing (Blake VerWoert)</text>
+    <rect x="80" y="58" width="60" height="14" fill="#dcfce7" rx="4" />
+    <text x="85" y="69" font-family="Arial" font-size="10" font-weight="bold" fill="#166534">READY</text>
+  </g>
+
+  <!-- Action: Auto-Fill -->
+  <g transform="translate(900, 230)">
+    <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#475569" letter-spacing="1">QUICK ACTIONS</text>
+    <rect x="0" y="15" width="280" height="45" fill="#0066ff" rx="8" />
+    <text x="140" y="43" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Auto-Fill Section</text>
+    <text x="0" y="75" font-family="Arial" font-size="12" fill="#64748b">Mapped: 32 of 45 fields</text>
+    <rect x="0" y="85" width="280" height="6" fill="#e2e8f0" rx="3" />
+    <rect x="0" y="85" width="210" height="6" fill="#22c55e" rx="3" />
+  </g>
+
+  <!-- Extracted Data Preview -->
+  <g transform="translate(900, 350)">
+    <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#475569" letter-spacing="1">AI EXTRACTIONS</text>
+    
+    <!-- Row 1 -->
+    <rect x="0" y="15" width="280" height="40" fill="white" stroke="#f1f5f9" rx="4" />
+    <text x="10" y="40" font-family="Arial" font-size="14" fill="#1e293b">List Price: </text>
+    <text x="80" y="40" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">$1,079,900</text>
+    <circle cx="265" cy="35" r="5" fill="#22c55e" /> <!-- High Confidence -->
+
+    <!-- Row 2 -->
+    <rect x="0" y="60" width="280" height="40" fill="white" stroke="#f1f5f9" rx="4" />
+    <text x="10" y="85" font-family="Arial" font-size="14" fill="#1e293b">Beds/Baths: </text>
+    <text x="95" y="85" font-family="Arial" font-size="14" font-weight="bold" fill="#1e293b">4 / 3.5</text>
+    <circle cx="265" cy="80" r="5" fill="#22c55e" />
+
+    <!-- Row 3: Ambiguity Check -->
+    <rect x="0" y="105" width="280" height="40" fill="#fff7ed" stroke="#fed7aa" rx="4" />
+    <text x="10" y="130" font-family="Arial" font-size="14" fill="#9a3412">School District: </text>
+    <text x="110" y="130" font-family="Arial" font-size="14" font-weight="bold" fill="#9a3412">Kenowa Hills</text>
+    <circle cx="265" cy="125" r="5" fill="#f59e0b" /> <!-- Low Confidence -->
+  </g>
+
+  <!-- Media Pipeline -->
+  <g transform="translate(900, 530)">
+    <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#475569" letter-spacing="1">MEDIA PIPELINE (JPEGs)</text>
+    <rect x="0" y="15" width="280" height="45" fill="white" stroke="#0066ff" rx="8" />
+    <text x="140" y="43" font-family="Arial" font-size="16" font-weight="bold" fill="#0066ff" text-anchor="middle">Sync 42 Photos</text>
+    
+    <g transform="translate(0, 75)">
+      <rect x="0" y="0" width="60" height="40" fill="#f1f5f9" rx="4" />
+      <rect x="70" y="0" width="60" height="40" fill="#f1f5f9" rx="4" />
+      <rect x="140" y="0" width="60" height="40" fill="#f1f5f9" rx="4" />
+      <rect x="210" y="0" width="60" height="40" fill="#f1f5f9" rx="4" opacity="0.4" />
+    </g>
+    <text x="0" y="130" font-family="Arial" font-size="11" fill="#64748b">Optimizing to 3000px... 92% complete</text>
+  </g>
+
+  <!-- Footer Branding -->
+  <text x="1040" y="780" font-family="Arial" font-size="12" font-weight="bold" fill="#cbd5e1">B R A I N S T O R M</text>
+</svg>
