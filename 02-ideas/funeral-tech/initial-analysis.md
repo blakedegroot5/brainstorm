@@ -42,7 +42,14 @@ Blake’s background in **hospital transport and scheduling** provides a massive
 
 ---
 
-## Initial Verdict
-**Viable Candidate.** It fits the "Field Service Management" archetype but for a very high-stakes vertical.
+## Initial Verdict: The "Hard Utility" Play
+**Status:** High-Potential Plan B.
 
-**Next Action (if pursued):** Identify 5 local Michigan funeral homes and see what their current "Permit/Obituary" workflow looks like.
+This idea is worth pursuing **only if focused on Hard Logistics (Removals/Permits)** rather than "Soft AI" (Family Chatbots). 
+
+### **Why it Wins:**
+1. **The Handoff Wedge:** Leveraging Blake's hospital transport background to solve the "Removal" coordination (Morgue → Funeral Home).
+2. **Administrative Friction:** Solving the "Permit/Certificate" paperwork nightmare which takes ~2 hours per case.
+3. **Low API Risk:** Unlike the MLS app, this doesn't rely on a single, fragile 3rd-party API. We own the data entry.
+
+**Next Action (if MLS app stalls):** Interview 3 Michigan Funeral Directors specifically about their "Removal Logistics" and "State Permit" workflow.
