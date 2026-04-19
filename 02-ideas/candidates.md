@@ -49,6 +49,14 @@
   - [flexmls-api-research.md](../04-planning/mls-listing-automation/flexmls-api-research.md) (technical feasibility)
   - [real-estate-competitor-analysis.md](../04-planning/mls-listing-automation/real-estate-competitor-analysis.md) (MLS tool competitive landscape)
 
+### Funeral Home AI Operations (Vertical SaaS)
+- **Status:** Backburner / Exploratory.
+- **Hypothesis:** AI-driven "ServiceTitan for Funeral Homes."
+- **Wedge:** AI Obituary Assistant + Document/Permit Automation.
+- **Landtrack Check:** Clear. Focus is on *internal* home workflow, not external scraping.
+- **Docs:**
+  - [initial-analysis.md](./funeral-tech/initial-analysis.md)
+
 ## Shelved / Rejected
 
 ### Residential Concrete Contractor Lead Generation
