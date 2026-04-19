@@ -11,15 +11,7 @@
 ### **Strategy A: The "Presence-First" Goldmine (Low-Hanging Fruit)**
 *   **The Goal:** Move "No-Website" shops to a professional 5-page digital presence.
 *   **The Pitch:** "Get online and look as professional as your work." Focus on trust, local heritage, and capability lists.
-*   **The Leads (West Michigan "No-Website" List):**
-    *   **H D Tool & Die** (Holland)
-    *   **Cooper Machine & Welding** (Muskegon)
-    *   **East River Machine & Tool** (Muskegon)
-    *   **A & C Machine & Tool** (Norton Shores)
-    *   **Highland Fixture & Machine** (Comstock Park)
-    *   **Action Mold & Machining** (Holland)
-    *   **Jacox Machine Shop** (Grand Rapids)
-    *   **Emerald Tool Inc.** (Muskegon)
+*   **The Leads:** [Detailed West Michigan "No-Website" Lead List](./west-michigan-lead-list.md) (8 high-value candidates in Muskegon, Holland, and Grand Rapids).
 
 ### **Strategy B: The "Portal & Grant" Upsell**
 *   **The Goal:** High-margin ($10k+) digital transformation for established shops with outdated sites.
