@@ -46,6 +46,15 @@
   - [flexmls-api-research.md](../04-planning/mls-app/flexmls-api-research.md) (technical feasibility)
   - [real-estate-competitor-analysis.md](../04-planning/mls-app/real-estate-competitor-analysis.md) (MLS tool competitive landscape)
 
+### Local SMB Web Redesign & Hosting Consulting
+- **Status:** Candidate / Under Review (2026-04-19)
+- **Hypothesis:** High-margin redesign + hosting optimization for local Michigan businesses with outdated or slow websites.
+- **Revenue Model:** Project fees ($2k-$10k) + Recurring "Web-as-a-Service" ($200/mo).
+- **Alignment:** Potential funding mechanism for the MLS App.
+- **Wedge:** "Michigan-First" (Geographic Trust) + Automated Audit (Scoping).
+- **Docs:**
+  - [initial-analysis.md](./local-web-redesign/initial-analysis.md)
+
 ### Funeral Home AI Operations (Vertical SaaS)
 - **Status:** Backburner / Exploratory.
 - **Hypothesis:** AI-driven "ServiceTitan for Funeral Homes."

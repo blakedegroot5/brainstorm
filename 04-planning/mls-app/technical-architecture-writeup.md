@@ -8,25 +8,26 @@ Status: Implementation-oriented architecture write-up (pre-build)
 ### Product scope (v1)
 - Geography: Michigan only.
 - MLS focus: FlexMLS ecosystem.
-- Primary user: agent/admin creating listings.
-- Core value: reduce MLS prep/entry time and errors.
+- Media focus: Edited JPEGs (Photographer standard). No RAW conversion in v1.
+- Core value: Reduce MLS prep/entry time and media management "rage."
 
 ### In-scope capabilities (v1)
 - Listing workspace (property details + media + generated copy).
-- AI-assisted data consolidation (text/voice/docs/photos).
-- FlexMLS sidecar autofill workflow with human final review.
-- Basic collaboration handoff (agent/admin + optional photographer upload link).
+- AI-assisted data consolidation with strict cost-guardrails (thumbnail-first vision, one-pass extraction).
+- FlexMLS sidecar "Incomplete" staging workflow (no direct "Active" submissions).
+- Media management (resizing to 3000px, re-ordering, auto-tagging JPEGs).
 
 ### Out of scope (v1)
 - Full transaction management.
-- Deep accounting suite.
+- Deep accounting suite / Automated Payouts.
 - Multi-MLS support.
+- RAW photo conversion.
 
 ### Critical unresolved dependency
-- Spark API write capability is still unconfirmed.
-- Architecture supports two execution modes:
-  - Mode A: API-assisted write (preferred if available).
-  - Mode B: browser-side staged autofill (fallback).
+- Spark API write capability is confirmed as possible via "Private Role" but requires broker-signed DLA.
+- Architecture supports a **Hybrid Execution Mode**:
+  - **Path A: API-Official (The "Stable" Way):** Preferred for partners who sign the DLA (e.g., Wildlife Realty).
+  - **Path B: Extension-Universal (The "Zero-Friction" Way):** Browser-side staged autofill for agents without broker-level API access.
 
 ## 2) System overview
 
@@ -135,17 +136,19 @@ Status: Implementation-oriented architecture write-up (pre-build)
 2. New listing version is created.
 3. Sidecar re-fills only changed fields.
 
-## 6) Mode A vs Mode B execution
+## 6) Hybrid Integration Model
 
-### Mode A (Spark write available)
-- API writes supported listing fields through Spark.
-- Sidecar remains useful for visibility, field diffs, and validation checks.
-- Fallback to UI-fill for unsupported fields.
+### Path A: API-Official (Spark API)
+- **Target:** Broker-owned or partner offices (Wildlife Realty).
+- **Execution:** API writes "Incomplete" listings directly to FlexMLS backend.
+- **Benefits:** Maximum reliability, media-handling via server-to-server, 2-way sync potential.
+- **Requirement:** Signed DLA from Broker of Record.
 
-### Mode B (Spark write unavailable/limited)
-- Sidecar performs deterministic field fill in FlexMLS UI.
-- Robust selector strategy + mapping versioning required.
-- More monitoring needed for UI drift/breakage.
+### Path B: Extension-Universal (DOM Injection)
+- **Target:** Individual agents at big-box brokerages (ReMax, KW).
+- **Execution:** Sidecar UI maps data to the active FlexMLS browser tab. JavaScript "fills" the fields on behalf of the user.
+- **Benefits:** Zero-barrier to entry, no broker signature required, works instantly for any agent.
+- **Requirement:** Browser extension installed.
 
 ## 7) Security, compliance, and trust controls
 

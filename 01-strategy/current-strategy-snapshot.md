@@ -13,24 +13,24 @@ Find a fast-cashflow business path, then evolve toward recurring MRR.
 - Validated "actual rage" around FlexMLS photo management (resizing/ordering) via Reddit/forum research.
 - Refined "Trojan Horse" to the "Collaboration Hook"—realtor sends upload link, photographer uploads raw files, platform "cleans" them for MLS.
 - Prioritized "Chrome Side Panel API" for the Sidecar UI to ensure a native, stable gutter next to FlexMLS.
-- Added "Adaptive Sidecar" strategy for cross-browser support (Chrome/Firefox native, Safari injected drawer).
-- Identified the "Unified Workflow" (Scheduling + Payments + Media + MLS Auto-Fill) as the primary competitive gap.
-- Pushed all research and architecture updates to GitHub.
+- **Cost-Optimized AI Model**: Implement "Thumbnail-First" vision and "One-Pass" extraction to keep API costs <$1 per listing.
+- **JPEG-Only Pipeline**: Focus on high-res JPEGs (photographer standard) to solve the resizing/ordering "rage" without the complexity of RAW.
+- Pivot to **Hybrid Integration Strategy**: Build both Spark API (Official) and Chrome Extension (Universal) sequentially. This bypasses broker "red tape" while offering a premium stable path for partners.
 
 ## Current status (as of 2026-04-19)
 
 **Active exploration:** Real Estate MLS Listing Automation + Workflow Expansion
 
 We are in a **"ready-to-validate"** state with a high-conviction product hypothesis:
-- **The Problem:** Manual data entry and media management are massive bottlenecks for realtors and admins.
-- **The Solution:** A unified platform that bridges the gap from vendor prep (scheduling/media) to MLS posting (Sidecar UI auto-fill).
-- **The Wedge:** Integrating the photographer into the workflow via a "Collaboration Hook" and solving the media "rage" (photo resizing/ordering).
+- **The Problem:** Manual data entry and media management (resizing/ordering) are massive bottlenecks for realtors and admins.
+- **The Solution:** A "Cost-Light" unified platform that stages "Incomplete" listings via Hybrid Sidecar.
+- **The Wedge:** Using the "Wildlife Realty" (Broker-Owned) connection to build the official API path while using the extension as the universal entry point.
 
 **Research complete:**
 - ✅ MLS ToS/Licensing (cleared)
 - ✅ Competitor Analysis (gaps identified)
 - ✅ Realtor Pain Points (validated)
-- ✅ System Architecture (Sidecar UI + Adaptive Sidebar defined)
+- ✅ System Architecture (Hybrid API + Extension defined)
 
 **Next immediate actions:**
 

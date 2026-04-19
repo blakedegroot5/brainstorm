@@ -17,10 +17,28 @@
 *   **Fragmentation vs. Consolidation:** We are adding *another* tool to an already crowded stack. Unless we truly replace 2-3 existing tools, we might be perceived as "one more login."
 *   **Payment Complexity:** Building a 4-6 week MVP that includes **multi-party payments** (Agent -> Platform -> Vendor) with 1099 compliance/tax tracking is an aggressive timeline.
 
-### **Opportunities (The Upside)**
-*   **The "Photo Management" Hook:** Market research shows photo resizing/ordering is a major source of "actual rage." If we solve *only* the photo-to-MLS pipeline, we might have a faster MVP than full data entry.
+### **Opportunity: The "Media Rage" Hook (Validated)**
+Market research across 2025-2026 forums identifies media management as the #1 source of "actual rage."
+*   **The "Incomplete" Workaround:** Flexmls forces agents to save a listing as "Incomplete" before they can even *see* the media upload button. It is a disjointed, two-step process.
+*   **The HEIC Trap:** Mobile photos (HEIC) are frequently rejected by the legacy Flexmls uploader, forcing agents into manual conversion loops.
+*   **Sequencing Jifts:** The native drag-and-drop tool is notoriously "jumpy," often leading to incorrect cover photos (e.g., a bathroom appearing as the primary thumbnail on Zillow).
+*   **Compression Quality:** Agents complain that professional photography is heavily degraded by the native MLS "optimization."
 *   **AI "Staging" Area:** There is an opportunity to create a "Listing Pre-flight" dashboard where AI flags potential Fair Housing or MLS rule violations before the agent even opens FlexMLS.
 *   **Vendor Referral Loop:** If photographers love the tool (because it handles their invoices/delivery), they will refer it to their other agent clients.
+
+### **Opportunity: Workflow Fragmentation (The "Invisible" Churn)**
+Deep-dives into `help.flexmls.com` and agent forums reveal a second tier of friction beyond media management that causes high administrative fatigue.
+
+*   **Purge Risk:** Flexmls has a strict "Incomplete" listing shelf life. If an agent doesn't "touch" a draft within a specific window, it is purged. This creates high anxiety for agents juggling multiple upcoming listings.
+*   **Copy/Clone Data Loss:** The "Copy" feature in Flexmls is notoriously lossy. It often fails to carry over critical "Listing Member" notes, specific media sequences, or nuanced field data, forcing a manual "re-audit" of every field.
+*   **Geocode Imprecision:** The "Map Pin" often defaults to the center of a zip code or a generic street placement. Agents must manually "drag" pins for precision—a tiny but repetitive friction point.
+*   **'Red Exclamation' Fatigue:** The validation UI is binary and punishing. An agent might have 95% of the data ready, but the UI "screams" with red errors until the final click, making the process feel like an interrogation rather than a workflow.
+
+**How we solve this (The Operational Moat):**
+*   **Eternal Drafts:** Our Sidecar UI caches all listing data locally and in our cloud. Even if Flexmls purges the "Incomplete" entry, our "One-Click Restore" pushes the data back in seconds.
+*   **Smart Copy:** Our tool parses the *entire* historical listing (including hidden metadata) and maps it to the new entry, ensuring 100% data fidelity.
+*   **Precision Pinning:** We use high-resolution parcel data to pre-calculate the exact lat/long, bypassing the "Map Drag" step entirely.
+*   **Error Navigator:** Instead of "Red Exclamations," our UI provides a "Pre-flight Checklist" that guides the agent through missing fields in a logical, low-stress sequence before they even touch the Flexmls "Save" button.
 
 ### **Threats (The Market)**
 *   **Zillow/ShowingTime+ Vertical Integration:** Since Zillow owns Aryeo and ShowingTime, they are the most likely to build this "unified" workflow themselves. Our speed must be our advantage.
@@ -40,9 +58,10 @@ To mitigate API fragility (Spark API read-only or DOM changes), we build a **Sid
 *   **How it works:** A floating sidebar sits next to the FlexMLS window. It contains all the extracted data (Price, Beds, AI Description) with **"Click-to-Fill"** buttons for every field.
 *   **The Benefit:** It is 100% resilient to CSS changes or API restrictions. It keeps the agent in control (reducing "fine fear") while still being 90% faster than manual typing.
 
-### **Refinement 3: Media-First "Wow" Factor**
-Market research identifies "actual rage" around FlexMLS media management (resizing/ordering).
-*   **The Feature:** AI auto-detects room types and sequences them (Exterior → Main → Upper → Lower) while auto-resizing to the 3000x2000px / 15MB FlexMLS limit. This solves a 20-minute manual headache that text-only AI (Writor/ChatGPT) ignores.
+### **Refinement 3: Media-First "Wow" Factor & Workflow Fixes**
+Market research identifies "actual rage" around FlexMLS media management (resizing/ordering) and workflow logic.
+*   **The Feature:** AI auto-detects room types and sequences them (Exterior → Main → Upper → Lower) while auto-resizing to the 3000x2000px / 15MB FlexMLS limit. 
+*   **The Workflow Add-on:** Integrate the **Eternal Draft** and **Smart Copy** logic into the Sidecar UI, positioning the tool as an "Insurance Policy" against Flexmls data loss.
 
 ---
 

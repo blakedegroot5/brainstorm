@@ -75,6 +75,7 @@ Agent inputs property data via any method (voice dictation, typing, photo upload
 2. Photo upload → auto-fill (vs. Restb.ai's separate ecosystem)
 3. Existing doc paste → unified listing (vs. Cotality's regional limits)
 4. Combination of all three (unique to this product)
+5. **Secondary Workflow Fixes:** Automated precision pinning, draft persistence (anti-purge), and "Smart Copy" data fidelity that Flexmls natively lacks. This positions the tool as an "Insurance Policy" for listing data.
 
 **V1 Service Alternative:**
 Instead of building extension immediately, start with manual service:
@@ -83,12 +84,21 @@ Instead of building extension immediately, start with manual service:
 - Agent: pastes into MLS
 - Test WTP before building automation
 
-**Critical feasibility questions:**
-- Can you auto-fill FlexMLS form fields via Spark API, or must you use DOM manipulation?
-- How do you consolidate dictation + photo analysis + document extraction into one AI pipeline? (KNOWN GOOD)
-- How do you handle agent credentials/API access securely?
-- Which MLS systems do you support? (Michigan only = FlexMLS only for v1 ✅)
-- Can you build this in 4-6 weeks? (YES, if Spark API supports writes ✅)
+## The "Top 10" Most Painful Fields (MichRIC Target)
+
+Based on 2026 MichRIC Residential Input Forms, these are the high-error/high-friction fields we must auto-populate:
+1.  **Substructure:** Daylight, Walk-out, Slab, Crawl, or "Michigan Basement."
+2.  **Heat Source vs. Type:** Distinguishing Natural Gas from Forced Air/Geothermal.
+3.  **Cooling:** Central vs. Wall vs. SEER 13+.
+4.  **Exterior Features:** Checklist of 10+ items (Deck, Porch, Patio, Dock, etc.).
+5.  **Road Frontage:** Paved, Public, Private, or Unimproved.
+6.  **Waterfront:** Body name, Frontage feet, and specific features.
+7.  **Zoning/Land Use:** Matching municipal codes to MLS dropdowns.
+8.  **Lot Description:** Wooded, Rolling, Cul-de-sac (Subjective).
+9.  **Sewer/Water:** Septic vs. Sewer, Well vs. Municipal.
+10. **Financials:** Auto-pulling SEV/Taxable Value from tax records.
+
+**Critical Event (Jan 2026):** MichRIC is removing "Area" and "Sub-Area" fields, requiring agents to map listings precisely. Our tool will auto-calculate coordinates from the address to solve this "Mapping Gap."
 
 **Feasibility Research:**
 See [flexmls-api-research.md](./flexmls-api-research.md) for detailed breakdown. Key unknowns:
