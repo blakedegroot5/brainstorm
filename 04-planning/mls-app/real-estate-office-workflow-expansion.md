@@ -150,7 +150,7 @@ The admin's responsibilities:
 - [ ] **FlexMLS Field Mapping:** Map the top 30-50 most common residential listing fields in FlexMLS to prioritize Sidecar "Fill" buttons.
 
 ### 2. Discovery & Validation
-- [ ] **Solo Agent Call:** Run discovery with friend using the updated [Friend Discovery Call Guide](../../03-discovery/mls-listing-automation/friend-discovery-call-guide.md).
+- [ ] **Solo Agent Call:** Run discovery with friend using the updated [Friend Discovery Call Guide](../../03-discovery/mls-app/friend-discovery-call-guide.md).
 - [ ] **Admin Interview Guide:** Draft a specific discovery script for Office Admins, focusing on vendor scheduling, multi-party payments, and "Admin Monday" bottlenecks.
 - [ ] **Spark API Confirmation:** Await response from api-support@sparkplatform.com regarding write capabilities.
 
@@ -162,6 +162,6 @@ The admin's responsibilities:
 ## Key Documents Referenced
 
 - [flexmls-api-research.md](./flexmls-api-research.md) — FlexMLS API write capability research
-- [real-estate-mls-listing-automation.md](./real-estate-mls-listing-automation.md) — Original MLS auto-fill hypothesis
+- [real-estate-mls-app.md](./real-estate-mls-app.md) — Original MLS auto-fill hypothesis
 - [real-estate-competitor-analysis.md](./real-estate-competitor-analysis.md) — MLS tool competitive landscape
 - [agent-analysis-and-feedback.md](./agent-analysis-and-feedback.md) — SWOT and strategic refinements

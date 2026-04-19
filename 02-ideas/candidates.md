@@ -44,10 +44,11 @@
     - ✅ **CLEARED:** Real estate broker license NOT required (workflow software ≠ real estate services)
     - ✅ **CLEARED:** Fair Housing risk manageable (we don't make listing decisions)
 - **Docs:**
-  - [real-estate-office-workflow-expansion.md](../04-planning/mls-listing-automation/real-estate-office-workflow-expansion.md) (FULL PRODUCT HYPOTHESIS)
-  - [real-estate-mls-listing-automation.md](../04-planning/mls-listing-automation/real-estate-mls-listing-automation.md) (original MLS auto-fill hypothesis)
-  - [flexmls-api-research.md](../04-planning/mls-listing-automation/flexmls-api-research.md) (technical feasibility)
-  - [real-estate-competitor-analysis.md](../04-planning/mls-listing-automation/real-estate-competitor-analysis.md) (MLS tool competitive landscape)
+  - [initial-hypothesis.md](./mls-app/initial-hypothesis.md) (HIGH LEVEL IDEA)
+  - [real-estate-office-workflow-expansion.md](../04-planning/mls-app/real-estate-office-workflow-expansion.md) (FULL PRODUCT HYPOTHESIS)
+  - [real-estate-mls-app.md](../04-planning/mls-app/real-estate-mls-app.md) (original MLS auto-fill hypothesis)
+  - [flexmls-api-research.md](../04-planning/mls-app/flexmls-api-research.md) (technical feasibility)
+  - [real-estate-competitor-analysis.md](../04-planning/mls-app/real-estate-competitor-analysis.md) (MLS tool competitive landscape)
 
 ### Funeral Home AI Operations (Vertical SaaS)
 - **Status:** Backburner / Exploratory.

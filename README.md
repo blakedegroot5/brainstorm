@@ -6,7 +6,7 @@ Private planning repo for finding and validating the next software business.
 
 1. `CLAUDE.md` at the root is auto-loaded by Claude Code every session. That's the persistent context — working style, constraints, strategic decisions already made.
 2. Folders are organized by phase: strategy → ideas → discovery → planning → build.
-3. Every project has a dedicated subfolder within each phase (e.g., `03-discovery/mls-listing-automation`).
+3. Every project has a dedicated subfolder within each phase (e.g., `03-discovery/mls-app`).
 4. When new decisions or artifacts come out of a session, Claude should write them to the appropriate file. Chat memory is ephemeral; the repo is the source of truth.
 
 ## Starting a new Claude Code session
