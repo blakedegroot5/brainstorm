@@ -470,3 +470,40 @@ If all four validate positively, we have a buildable, defensible product.
 4. **Clear ROI for admin** — Saves 20-30 minutes per listing × 3 listings/month = ~1.5 hours/month = clear value
 5. **Clear monetization** — $100-200/mo per brokerage office (or $50/mo per solo agent)
 6. **Buildable in 4-6 weeks** — If Spark API supports writes and we stay focused on MVP scope
+
+---
+
+## 4. UI/UX Strategy: The "Sidecar" Interface
+
+To ensure maximum stability and agent control, the primary interface for MLS data entry will be a **Chrome Extension Sidecar**.
+
+### **Primary: Chrome Side Panel API (The "Pinned Gutter")**
+*   **The Experience:** A dedicated, native-feeling panel that slides out from the right side of the Chrome window.
+*   **Why it wins:** 
+    *   **Native Feel:** It resizes the FlexMLS website instead of covering it up, ensuring no buttons are hidden.
+    *   **Persistence:** The panel stays open and "pinned" even as the agent navigates between different tabs or pages within FlexMLS (e.g., from "General Data" to "Media Upload").
+    *   **Reliability:** It doesn't rely on complex CSS injection into the host page, making it much more resilient to FlexMLS UI updates.
+*   **Key Feature:** "Progress Gamification"—A 0-100% completion bar that fills up as the agent clicks "Fill" buttons for each field.
+
+### **Secondary Fallback: Injected "Floating Drawer"**
+*   **The Experience:** A draggable, minimizable UI overlay that hovers over the FlexMLS page.
+*   **Usage:** Only used if the agent's browser version doesn't support the Side Panel API or if a specific workflow requires an "overlay" style (e.g., a "magnifying glass" over a specific photo).
+*   **Risk:** Can occasionally "cover up" legacy FlexMLS elements or require re-injection on page navigation.
+
+### **The "Fill" Mechanism (Stability Priority)**
+1.  **Gold Standard (API):** If Spark API supports writes, the Sidecar sends data directly to the server. The FlexMLS page just "refreshes" with the new data.
+2.  **Silver Standard (One-Click Fill):** The Sidecar identifies the target field (e.g., `input#price`) and injects the value when the user clicks a "Fill" button in the Sidecar.
+3.  **Bronze Standard (Smart Clipboard):** If the field is too complex for injection, the "Fill" button becomes a "Copy" button, and we auto-highlight the target field in FlexMLS so the user can just hit `Cmd+V`.
+
+---
+
+## 5. Media Pipeline: The "Wow" Factor
+
+Market research confirms that **media management** (resizing, renaming, re-ordering) is the #1 source of "actual rage" for FlexMLS users.
+
+### **Automated Processing Workflow**
+*   **Ingestion:** RAW high-res files from the photographer (via the Collaboration Hook).
+*   **AI Vision Layer:** Detects room types (Kitchen, Master, Exterior) and automatically assigns tags.
+*   **Auto-Sequencing:** Orders photos in the "Marketing Sequence" (Exterior → Entry → Main Living → Kitchen → Master → Yard).
+*   **MLS-Ready Export:** Auto-resizes all images to 3000x2000px / <15MB to meet FlexMLS limits, stripping unnecessary metadata and ensuring perfect landscape orientation.
+*   **The "Magic" Button:** A single "Sync Media" button in the Sidecar that pushes the entire processed gallery into the FlexMLS "Photos" tab.
