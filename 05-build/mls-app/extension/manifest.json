@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "MLS Workflow Sidecar",
+  "version": "0.1.0",
+  "description": "Auto-fill and media management sidecar for FlexMLS.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.flexmls.com/*"
+  ],
+  "action": {
+    "default_title": "Open Sidecar"
+  },
+  "side_panel": {
+    "default_path": "sidecar.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.flexmls.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
