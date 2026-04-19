@@ -162,6 +162,7 @@ The admin's responsibilities:
 ## Key Documents Referenced
 
 - [flexmls-api-research.md](./flexmls-api-research.md) — FlexMLS API write capability research
+- [technical-architecture-writeup.md](./technical-architecture-writeup.md) — implementation-oriented architecture spec
 - [real-estate-mls-app.md](./real-estate-mls-app.md) — Original MLS auto-fill hypothesis
 - [real-estate-competitor-analysis.md](./real-estate-competitor-analysis.md) — MLS tool competitive landscape
 - [agent-analysis-and-feedback.md](./agent-analysis-and-feedback.md) — SWOT and strategic refinements
