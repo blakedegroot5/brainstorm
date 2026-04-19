@@ -219,3 +219,4 @@ Status: Implementation-oriented architecture write-up (pre-build)
 ## Related execution doc
 
 - [mvp-build-ticket-plan.md](./mvp-build-ticket-plan.md) — week-by-week MVP ticket plan with acceptance criteria.
+- [architecture-diagrams.md](./architecture-diagrams.md) — visual diagrams for stack, runtime architecture, and listing flow.
