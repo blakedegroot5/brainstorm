@@ -144,11 +144,18 @@ The admin's responsibilities:
 
 ## Next Steps
 
-1. **Spark API research** (2 days) — Confirm write capability for MLS auto-fill
-2. **Friend discovery call** (next week) — Validate pain + WTP for MLS auto-fill
-3. **Admin interview** (next week) — Validate vendor scheduling pain + full workflow WTP
-4. **Competitive deep dive** (parallel) — Confirm no one is solving vendor scheduling + MLS integration
-5. **Feasibility assessment** — Can we build payment integration + vendor scheduling + MLS in 4-6 weeks?
+### 1. Technical Feasibility & MVP Stop-Gaps
+- [ ] **Stripe Connect Research:** Investigate "Stripe Connect Express" or "Standard" for Platform-to-Vendor payments. Focus on KYC friction for photographers and ease of 1099 tracking.
+- [ ] **AI Vision POC:** Test GPT-4o-vision/Restb.ai on a sample set of property photos to verify room detection and auto-sequencing accuracy (Exterior → Kitchen → Master).
+- [ ] **FlexMLS Field Mapping:** Map the top 30-50 most common residential listing fields in FlexMLS to prioritize Sidecar "Fill" buttons.
+
+### 2. Discovery & Validation
+- [ ] **Solo Agent Call:** Run discovery with friend using the updated [Friend Discovery Call Guide](../../03-discovery/friend-discovery-call-guide.md).
+- [ ] **Admin Interview Guide:** Draft a specific discovery script for Office Admins, focusing on vendor scheduling, multi-party payments, and "Admin Monday" bottlenecks.
+- [ ] **Spark API Confirmation:** Await response from api-support@sparkplatform.com regarding write capabilities.
+
+### 3. Architecture & Security
+- [ ] **Auth Strategy:** Design the session-syncing mechanism between the Web App (Stripe subscription) and the Chrome Sidecar to ensure only paying users have "Fill" capabilities.
 
 ---
 
@@ -157,3 +164,4 @@ The admin's responsibilities:
 - [flexmls-api-research.md](./flexmls-api-research.md) — FlexMLS API write capability research
 - [real-estate-mls-listing-automation.md](./real-estate-mls-listing-automation.md) — Original MLS auto-fill hypothesis
 - [real-estate-competitor-analysis.md](./real-estate-competitor-analysis.md) — MLS tool competitive landscape
+- [agent-analysis-and-feedback.md](./agent-analysis-and-feedback.md) — SWOT and strategic refinements
