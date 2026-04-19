@@ -186,3 +186,7 @@
   - Rationale: Market has many cost estimator/quote tools already; broad consumer play appears crowded with high CAC risk and weak moat. Potential only if narrowed to a distribution-first wedge (for example permit/code-aware decisioning + quote normalization in a specific project category).
   - Next action: Do not allocate active sprint time unless a narrow wedge and clear acquisition channel are identified.
   - Doc: [02-ideas/diy-home-decision/initial-analysis.md](../02-ideas/diy-home-decision/initial-analysis.md)
+
+- Decision: Table DIY home project decision tool for now.
+  - Rationale: Current strategy priority is MLS app execution; DIY decision tool does not currently clear channel/moat confidence.
+  - Next action: Revisit only if a specific niche wedge and distribution path emerge.

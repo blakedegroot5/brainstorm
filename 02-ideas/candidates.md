@@ -55,7 +55,7 @@
   - [initial-analysis.md](./funeral-tech/initial-analysis.md)
 
 ### DIY Home Project Decision Tool (DIY vs Hire)
-- **Status:** Documented / low-priority exploratory.
+- **Status:** Tabled (2026-04-19).
 - **Hypothesis:** Homeowner decision engine for DIY vs contractor vs hybrid based on cost + time + risk.
 - **Current read:** Broad consumer version is likely no-go (crowded + distribution/CAC risk). Could be revisited only with a narrow wedge and clear channel.
 - **Docs:**
