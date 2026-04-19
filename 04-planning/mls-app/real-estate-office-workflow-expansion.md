@@ -151,7 +151,7 @@ The admin's responsibilities:
 
 ### 2. Discovery & Validation
 - [ ] **Solo Agent Call:** Run discovery with friend using the updated [Friend Discovery Call Guide](../../03-discovery/mls-app/friend-discovery-call-guide.md).
-- [ ] **Admin Interview Guide:** Draft a specific discovery script for Office Admins, focusing on vendor scheduling, multi-party payments, and "Admin Monday" bottlenecks.
+- [x] **Admin Interview Guide:** Use [admin-discovery-call-guide.md](../../03-discovery/mls-app/admin-discovery-call-guide.md) for office-admin workflow discovery (vendor scheduling, payments, and handoff bottlenecks).
 - [ ] **Spark API Confirmation:** Await response from api-support@sparkplatform.com regarding write capabilities.
 
 ### 3. Architecture & Security
