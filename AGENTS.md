@@ -52,6 +52,7 @@ Apply all six checks:
 ## Documentation requirements
 
 - CRITICAL RULE: this repo is the active brainstorming workspace and source of truth for finding the next idea to build. As work progresses, update the relevant docs immediately in the same session.
+- Git discipline rule: whenever any file is changed in this repo, commit and push those changes in the same session. Do not leave local-only edits.
 - Session startup rule: before proposing ideas or plans, review `CLAUDE.md` plus key context docs in `01-strategy/` (at minimum `decisions-log.md` and `collaboration-playbook.md` if they exist) so recommendations use current context.
 - Question cadence default: ask relevant strategy/discovery questions one at a time unless Blake explicitly requests a batch.
 - Persist outcomes to repo files; do not rely on session memory.

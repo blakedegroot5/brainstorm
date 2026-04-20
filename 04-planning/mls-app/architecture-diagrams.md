@@ -8,33 +8,33 @@ Scope: Michigan + FlexMLS v1
 ```mermaid
 flowchart TB
   subgraph Client[Client Layer]
-    WEB[Web App\nNext.js + TypeScript]
-    EXT[Browser Sidecar Extension\nManifest V3 + TypeScript]
+    WEB["Web App<br/>Next.js + TypeScript"]
+    EXT["Browser Sidecar Extension<br/>Manifest V3 + TypeScript"]
   end
 
-  subgraph API[Application Layer]
-    BFF[API Service\nNode.js (Fastify/NestJS)]
-    AUTH[Auth + Org Access]
-    LISTING[Listing + Versioning]
-    MAP[Field Mapping Service]
-    AUDIT[Audit/Event Service]
+  subgraph AppLayer[Application Layer]
+    BFF["API Service<br/>Node.js Fastify or NestJS"]
+    AUTH["Auth + Org Access"]
+    LISTING["Listing + Versioning"]
+    MAP["Field Mapping Service"]
+    AUDIT["Audit and Event Service"]
   end
 
   subgraph Async[Async Processing]
-    QUEUE[BullMQ / Redis Queue]
-    WORKER[Worker Service\nTranscription, OCR, Vision, LLM Normalize]
+    QUEUE["BullMQ and Redis Queue"]
+    WORKER["Worker Service<br/>Transcription, OCR, Vision, LLM Normalize"]
   end
 
   subgraph Data[Data Layer]
-    PG[(Postgres)]
-    S3[(S3-Compatible Object Storage)]
-    REDIS[(Redis Cache/Queue)]
+    PG["Postgres"]
+    S3["S3-Compatible Object Storage"]
+    REDIS["Redis Cache and Queue"]
   end
 
   subgraph External[External Integrations]
-    FLEX[FlexMLS / Spark API]
-    LLM[LLM + Speech + Vision APIs]
-    PAY[Payments (Optional Post-Validation)]
+    FLEX["FlexMLS or Spark API"]
+    LLM["LLM + Speech + Vision APIs"]
+    PAY["Payments (Optional Post-Validation)"]
   end
 
   WEB --> BFF
@@ -63,28 +63,28 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-  U[Agent/Admin User] --> WEB[Web App: Listing Workspace]
-  U --> EXT[Sidecar in FlexMLS]
+  U["Agent and Admin User"] --> WEB["Web App: Listing Workspace"]
+  U --> EXT["Sidecar in FlexMLS"]
 
-  WEB --> API[Backend API]
+  WEB --> API["Backend API"]
   EXT --> API
 
-  API --> DB[(Postgres)]
-  API --> OBJ[(Object Storage)]
-  API --> Q[Queue]
-  Q --> W[AI Workers]
-  W --> AI[Speech/OCR/Vision/LLM APIs]
+  API --> DB["Postgres"]
+  API --> OBJ["Object Storage"]
+  API --> Q["Queue"]
+  Q --> W["AI Workers"]
+  W --> AI["Speech, OCR, Vision, LLM APIs"]
 
-  API --> MAP[Field Mapping Rules]
+  API --> MAP["Field Mapping Rules"]
   MAP --> EXT
 
-  API -. Mode A .-> SPARK[Spark API Writes (if supported)]
-  EXT -. Mode B .-> FLEXUI[FlexMLS UI Field Fill (fallback)]
+  API -. "Mode A" .-> SPARK["Spark API Writes (if supported)"]
+  EXT -. "Mode B" .-> FLEXUI["FlexMLS UI Field Fill (fallback)"]
 
-  SPARK --> FLEX[FlexMLS]
+  SPARK --> FLEX["FlexMLS"]
   FLEXUI --> FLEX
 
-  API --> LOG[Audit + Fill Attempts]
+  API --> LOG["Audit + Fill Attempts"]
   EXT --> LOG
 ```
 
@@ -99,9 +99,9 @@ sequenceDiagram
   participant Ext as Sidecar Extension
   participant MLS as FlexMLS
 
-  User->>Web: Create listing + upload notes/photos/docs
+  User->>Web: Create listing + upload notes, photos, docs
   Web->>API: Save draft + enqueue extraction
-  API->>Worker: Process inputs (OCR/vision/transcription)
+  API->>Worker: Process inputs (OCR, vision, transcription)
   Worker->>API: Return normalized listing package
   API->>Web: Ready for review with confidence flags
   User->>Web: Edit + approve package

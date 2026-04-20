@@ -27,6 +27,7 @@ Before giving strategy recommendations, also review key docs under `01-strategy/
 ## How I want you to work with me
 
 - **CRITICAL RULE: this project is our active brainstorming folder for finding the next idea to build.** As we go, continuously update the relevant `.md` docs in this repo during the same session.
+- **Git discipline rule:** whenever we make any change in this repo, commit and push in the same session so the remote stays current.
 - **DOCUMENTATION IS THE CONTRACT.** Document ALL relevant info I give you (constraints, decisions, technical insights, requirements). Don't paraphrase or summarize—capture exact intent. This repo is the source of truth, not chat history.
 - **Question cadence default:** ask relevant questions one at a time (not in batches) unless Blake explicitly asks for multiple questions at once.
 - **Ask clarifying questions before giving detailed answers, but don't overwhelm.** Use the AskUserQuestion tool if you have it; otherwise ask in prose. Keep it to 2–4 questions max per round.
