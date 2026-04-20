@@ -91,32 +91,41 @@ flowchart LR
 ## 3) Listing-to-MLS Flow
 
 ```mermaid
-sequenceDiagram
-  participant User as Agent/Admin
-  participant Web as Web App
-  participant API as Backend API
-  participant Worker as AI Worker
-  participant Ext as Sidecar Extension
-  participant MLS as FlexMLS
-
-  User->>Web: Create listing + upload notes, photos, docs
-  Web->>API: Save draft + enqueue extraction
-  API->>Worker: Process inputs (OCR, vision, transcription)
-  Worker->>API: Return normalized listing package
-  API->>Web: Ready for review with confidence flags
-  User->>Web: Edit + approve package
-
-  User->>Ext: Open sidecar on FlexMLS listing form
-  Ext->>API: Fetch approved package + field map
-
-  alt Spark write supported
-    API->>MLS: Write supported fields via Spark API
-    Ext->>MLS: Fill remaining unsupported UI fields
-  else Spark write unsupported
-    Ext->>MLS: Staged UI field fill by section
+flowchart TB
+  subgraph Phase1["Phase 1: Create and Normalize Listing"]
+    A1["1) Agent creates draft in Web App<br/>and uploads notes/photos/docs"]
+    A2["2) Web App saves draft via API"]
+    A3["3) API queues AI extraction job"]
+    A4["4) Worker returns normalized listing package"]
+    A5["5) Agent reviews, edits, and approves package"]
+    A1 --> A2 --> A3 --> A4 --> A5
   end
 
-  User->>MLS: Final human review + submit
-  Ext->>API: Send fill attempt results
-  API->>API: Persist audit log + metrics
+  subgraph Phase2["Phase 2: Open MLS and Load Fill Plan"]
+    B1["6) Agent opens Sidecar on FlexMLS form"]
+    B2["7) Sidecar fetches approved package + field map from API"]
+    B1 --> B2
+  end
+
+  subgraph Phase3["Phase 3: Fill Strategy Decision"]
+    C1{"8) Spark API write supported?"}
+    C2["Mode A: API writes supported fields via Spark"]
+    C3["Mode B: Sidecar fills fields in FlexMLS UI"]
+    C4["Sidecar fills any remaining unsupported UI fields"]
+    C1 -->|Yes| C2
+    C2 --> C4
+    C1 -->|No| C3
+  end
+
+  subgraph Phase4["Phase 4: Human Final Check + Audit"]
+    D1["9) Agent does final review in FlexMLS and submits"]
+    D2["10) Sidecar sends fill results to API"]
+    D3["11) API stores audit log + quality metrics"]
+    D1 --> D2 --> D3
+  end
+
+  A5 --> B1
+  B2 --> C1
+  C3 --> D1
+  C4 --> D1
 ```
