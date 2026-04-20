@@ -75,3 +75,10 @@ There is a massive "Tail" of local Michigan small-to-medium businesses (SMBs) ru
 2.  [ ] **Gauge reaction:** Do they see value in recurring cost? Or expect "one-time" build?
 3.  [ ] **If positive:** Build one site as proof-of-concept. Measure actual monthly effort.
 4.  [ ] **Decide:** Is this a primary business (needs 20-30 clients to scale) or a 6-week cashflow sprint?
+
+---
+
+## 7. Related Planning Docs
+
+- [offer-and-seo-positioning.md](../../04-planning/local-web-redesign/offer-and-seo-positioning.md)
+- [hosting-provider-options.md](../../04-planning/local-web-redesign/hosting-provider-options.md)

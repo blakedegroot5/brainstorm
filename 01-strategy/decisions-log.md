@@ -190,3 +190,20 @@
 - Decision: Table DIY home project decision tool for now.
   - Rationale: Current strategy priority is MLS app execution; DIY decision tool does not currently clear channel/moat confidence.
   - Next action: Revisit only if a specific niche wedge and distribution path emerge.
+
+- Decision: Build a strict time-boxed Sidecar prototype as a discovery artifact, not as a production build.
+  - Rationale: A clickable Sidecar is the fastest way to validate workflow fit and trust with 2-3 target users (friend agent + office admin) before deeper build work. It supports "feasibility first" without violating the rule against building full product before discovery evidence.
+  - Guardrails: Cap at 1-2 evenings; fake/mock data is acceptable; no backend, billing, or broad feature scope. Success = users confirm it would save real listing prep time and ask to try it again.
+  - Next action: Run 2-3 usability/discovery sessions with the prototype, capture observed friction and quantified time-saved estimate, then decide go/no-go on production Path B implementation.
+
+## 2026-04-20
+
+- Decision: For local web redesign, position SEO as a supporting value prop, not the core promise.
+  - Rationale: Conversion and credibility outcomes are clearer and lower-risk than ranking guarantees; avoids overpromising and aligns better with short sales cycles.
+  - Next action: Use \"conversion-first + local SEO foundation\" messaging in scripts and proposals; keep SEO growth as optional monthly add-on.
+  - Doc: [offer-and-seo-positioning.md](../04-planning/local-web-redesign/offer-and-seo-positioning.md)
+
+- Decision: Prefer managed hosting/low-code platforms over a shared single VPS at current stage.
+  - Rationale: Shared VPS increases operational/support risk and blast radius for a solo operator. Managed platforms reduce maintenance burden and improve delivery speed.
+  - Next action: Default to Webflow for low-code builds and Cloudflare/Netlify/Vercel for custom static sites; revisit shared VPS only after standardized ops and stable MRR.
+  - Doc: [hosting-provider-options.md](../04-planning/local-web-redesign/hosting-provider-options.md)
