@@ -27,8 +27,22 @@
       padding: 1rem;
       margin-bottom: 1rem;
     }
-    .field-label { font-size: 0.875rem; color: #6b7280; margin-bottom: 0.25rem; }
-    .field-value { font-size: 1rem; color: #111827; font-weight: 500; }
+    .field-group {
+      margin-bottom: 1rem;
+    }
+    .field-label {
+      display: block;
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-bottom: 0.25rem;
+    }
+    .field-input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+    }
     button {
       width: 100%;
       background-color: #2563eb;
@@ -54,9 +68,169 @@
   <h2>MLS Workflow Sidecar</h2>
   <div class="status-badge">Path B: Extension Active</div>
 
-  <div class="card" id="listing-info">
-    <div class="field-label">Current Address</div>
-    <div class="field-value" id="address">123 Main St, Grand Rapids, MI</div>
+  <div class="card">
+    <form id="listing-form">
+      <div class="field-group">
+        <label class="field-label" for="AboveGradeFinishedArea">Above Grade Finished Area</label>
+        <input class="field-input" type="text" id="AboveGradeFinishedArea" name="AboveGradeFinishedArea">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AboveGradeFinishedAreaSource">Above Grade Finished Area Source</label>
+        <input class="field-input" type="text" id="AboveGradeFinishedAreaSource" name="AboveGradeFinishedAreaSource">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AboveGradeFinishedAreaUnits">Above Grade Finished Area Units</label>
+        <input class="field-input" type="text" id="AboveGradeFinishedAreaUnits" name="AboveGradeFinishedAreaUnits">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AboveGradeUnfinishedArea">Above Grade Unfinished Area</label>
+        <input class="field-input" type="text" id="AboveGradeUnfinishedArea" name="AboveGradeUnfinishedArea">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AccessCode">Access Code</label>
+        <input class="field-input" type="text" id="AccessCode" name="AccessCode">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AccessibilityFeatures">Accessibility Features</label>
+        <input class="field-input" type="text" id="AccessibilityFeatures" name="AccessibilityFeatures">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="ActivationDate">Activation Date</label>
+        <input class="field-input" type="text" id="ActivationDate" name="ActivationDate">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="Appliances">Appliances</label>
+        <input class="field-input" type="text" id="Appliances" name="Appliances">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="ArchitecturalStyle">Architectural Style</label>
+        <input class="field-input" type="text" id="ArchitecturalStyle" name="ArchitecturalStyle">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AssociationFee">Association Fee</label>
+        <input class="field-input" type="text" id="AssociationFee" name="AssociationFee">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="AttachedGarageYN">Attached Garage (Y/N)</label>
+        <input class="field-input" type="text" id="AttachedGarageYN" name="AttachedGarageYN">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="Basement">Basement</label>
+        <input class="field-input" type="text" id="Basement" name="Basement">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsFull">Full Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsFull" name="BathroomsFull">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsHalf">Half Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsHalf" name="BathroomsHalf">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsOneQuarter">One-Quarter Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsOneQuarter" name="BathroomsOneQuarter">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsPartial">Partial Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsPartial" name="BathroomsPartial">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsThreeQuarter">Three-Quarter Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsThreeQuarter" name="BathroomsThreeQuarter">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BathroomsTotalInteger">Total Bathrooms</label>
+        <input class="field-input" type="text" id="BathroomsTotalInteger" name="BathroomsTotalInteger">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BedroomsPossible">Possible Bedrooms</label>
+        <input class="field-input" type="text" id="BedroomsPossible" name="BedroomsPossible">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BedroomsTotal">Total Bedrooms</label>
+        <input class="field-input" type="text" id="BedroomsTotal" name="BedroomsTotal">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BelowGradeFinishedArea">Below Grade Finished Area</label>
+        <input class="field-input" type="text" id="BelowGradeFinishedArea" name="BelowGradeFinishedArea">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BelowGradeFinishedAreaSource">Below Grade Finished Area Source</label>
+        <input class="field-input" type="text" id="BelowGradeFinishedAreaSource" name="BelowGradeFinishedAreaSource">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BelowGradeFinishedAreaUnits">Below Grade Finished Area Units</label>
+        <input class="field-input" type="text" id="BelowGradeFinishedAreaUnits" name="BelowGradeFinishedAreaUnits">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BelowGradeUnfinishedArea">Below Grade Unfinished Area</label>
+        <input class="field-input" type="text" id="BelowGradeUnfinishedArea" name="BelowGradeUnfinishedArea">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuilderModel">Builder Model</label>
+        <input class="field-input" type="text" id="BuilderModel" name="BuilderModel">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuilderName">Builder Name</label>
+        <input class="field-input" type="text" id="BuilderName" name="BuilderName">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuildingAreaSource">Building Area Source</label>
+        <input class="field-input" type="text" id="BuildingAreaSource" name="BuildingAreaSource">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuildingAreaTotal">Building Area Total</label>
+        <input class="field-input" type="text" id="BuildingAreaTotal" name="BuildingAreaTotal">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuildingAreaUnits">Building Area Units</label>
+        <input class="field-input" type="text" id="BuildingAreaUnits" name="BuildingAreaUnits">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuildingFeatures">Building Features</label>
+        <input class="field-input" type="text" id="BuildingFeatures" name="BuildingFeatures">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BusinessName">Business Name</label>
+        <input class="field-input" type="text" id="BusinessName" name="BusinessName">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BusinessType">Business Type</label>
+        <input class="field-input" type="text" id="BusinessType" name="BusinessType">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentAOR">Buyer Agent AOR</label>
+        <input class="field-input" type="text" id="BuyerAgentAOR" name="BuyerAgentAOR">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentCellPhone">Buyer Agent Cell Phone</label>
+        <input class="field-input" type="text" id="BuyerAgentCellPhone" name="BuyerAgentCellPhone">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentDesignation">Buyer Agent Designation</label>
+        <input class="field-input" type="text" id="BuyerAgentDesignation" name="BuyerAgentDesignation">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentDirectPhone">Buyer Agent Direct Phone</label>
+        <input class="field-input" type="text" id="BuyerAgentDirectPhone" name="BuyerAgentDirectPhone">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentEmail">Buyer Agent Email</label>
+        <input class="field-input" type="text" id="BuyerAgentEmail" name="BuyerAgentEmail">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentFax">Buyer Agent Fax</label>
+        <input class="field-input" type="text" id="BuyerAgentFax" name="BuyerAgentFax">
+      </div>
+      <div class="field-group">
+        <label class for="BuyerAgentFirstName">Buyer Agent First Name</label>
+        <input class="field-input" type="text" id="BuyerAgentFirstName" name="BuyerAgentFirstName">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="BuyerAgentFullName">Buyer Agent Full Name</label>
+        <input class="field-input" type="text" id="BuyerAgentFullName" name="BuyerAgentFullName">
+      </div>
+    </form>
   </div>
 
   <button id="fill-btn">Stage MLS Fill</button>

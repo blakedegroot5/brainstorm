@@ -8,15 +8,14 @@ document.getElementById('fill-btn')?.addEventListener('click', async () => {
 
   console.log('[Path B] Initiating staged fill in tab:', tab.id);
 
+  const form = document.getElementById('listing-form');
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
   // Send message to content script to perform DOM injection
   chrome.tabs.sendMessage(tab.id, {
     action: 'STAGE_FILL',
-    data: {
-      price: '350000',
-      beds: '3',
-      baths: '2',
-      remarks: 'Gorgeous property with modern updates. Move-in ready!'
-    }
+    data: data
   });
 });
 
