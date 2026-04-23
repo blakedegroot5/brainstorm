@@ -207,3 +207,12 @@
   - Rationale: Shared VPS increases operational/support risk and blast radius for a solo operator. Managed platforms reduce maintenance burden and improve delivery speed.
   - Next action: Default to Webflow for low-code builds and Cloudflare/Netlify/Vercel for custom static sites; revisit shared VPS only after standardized ops and stable MRR.
   - Doc: [hosting-provider-options.md](../04-planning/local-web-redesign/hosting-provider-options.md)
+
+## 2026-04-23 (Session 3)
+
+- Decision: Prioritize local web redesign validation over MLS automation. Pursue both in parallel, but web redesign is primary focus.
+  - Rationale: Web redesign has 4-6 week validation cycle vs 12-18 month MLS sales cycle. Clearer go-to-market (direct to shop owners vs B2B sales to realtors). Faster cashflow ($3k + $200/mo per client). Leverages existing photography skills. Web redesign clients become early adopters for MLS tool if that pans out. MLS research/realtор interviews continue in parallel as secondary work.
+  - Primary focus: Contact manufacturing/trades businesses from expanded 22-lead list (Tier 1 this week).
+  - Secondary focus: Continue MLS discovery interviews with realtors when time permits.
+  - Doc: Updated [03-discovery/local-web-redesign/west-michigan-lead-list.md](../03-discovery/local-web-redesign/west-michigan-lead-list.md) with 22 leads (8 machining + 14 multi-trade), phased outreach sequence.
+  - Next action: Execute Tier 1 outreach to web redesign leads (email + phone). Test subscription model ($200/mo recurring) with first warm lead. Continue MLS validation work in parallel.
