@@ -1,6 +1,6 @@
 # West Michigan "No-Website" Lead List (Expanded)
 **Status:** Ready for outreach
-**Total Leads:** 23 (8 precision machining + 15 multi-trade)
+**Total Leads:** 38 (8 precision machining + 30 multi-trade)
 **Objective:** Move these shops from zero/minimal digital presence to a modern website + monthly hosting subscription.
 **Call Pitch:** "I shoot professional photos of your work + build a modern website. $3k upfront for photos + build. $200/mo for hosting + updates."
 
@@ -28,7 +28,7 @@
 
 ---
 
-## SECTION B: EXPANDED TRADES (14 New Leads by Sector)
+## SECTION B: EXPANDED TRADES (15 Leads by Sector)
 
 ### B1: WELDING & METAL FABRICATION
 
@@ -82,18 +82,47 @@
 
 ---
 
+## SECTION C: NEW AGENT-RESEARCHED LEADS (15 Net-New)
+
+### C1: MACHINING / AUTO-MACHINE
+
+| Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **24** | **D & J Manufacturing & Machining** | — | djmanufacturingmachining.localsearch.com | (231) 830-9522 | Muskegon | Directory template | Manufacturing buyer; low-trust web presence |
+| **25** | **Excell Machine & Tool** | — | excellmachinetool.localsearch.com | (231) 728-1210 | Muskegon | Directory template | Legacy profile; clear modernization gap |
+| **26** | **Park Street Machine** | — | parkstreetmachine.com | (231) 739-9165 | Muskegon | Very basic brochure | Sparse proof/content UX; easy improvement pitch |
+| **27** | **Northwestern Auto Machine** | — | northwestern-auto-machine-inc.autodeluxe.us | (231) 773-6414 | Muskegon | Template subdomain | Strong contactability; obvious redesign angle |
+| **28** | **Orion Machine Inc** | — | orionmach.net | (231) 728-1229 | Muskegon | Legacy/difficult fetch | Likely dated stack and weak mobile perception |
+
+### C2: ROOFING / EXCAVATION / TRENCHING / PLUMBING
+
+| Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **29** | **Michigan Roofing Tech** | — | michiganroofingtechmi.localsearch.com | (616) 334-7041 | Holland | Directory template | Clear before/after redesign value |
+| **30** | **Barry Roofing** | — | barryroofingmi.localsearch.com | (616) 201-1031 | Holland | Directory template | Contactable local roofer with weak web credibility |
+| **31** | **Dirkses Hauling & Excavating** | — | dirkseshaulingexcavating.localsearch.com | (616) 335-8560 | Holland | Directory template | High-intent service category; weak site moat |
+| **32** | **Dykgraaf Excavating** | — | dykgraafexcavating.localsearch.com | (616) 738-6024 | Holland | Minimal directory-style presence | Solid local niche with obvious upgrade path |
+| **33** | **Kentwood Excavating Inc** | — | kentwoodexcavating.com | (616) 949-5250 | Grand Rapids | Minimal legacy brochure | Established operator with thin conversion flow |
+| **34** | **Al's Trenching** | — | alstrenching.com | (616) 735-9525 | Grand Rapids | Older basic site structure | Service-specific business; easy conversion-first refresh |
+| **35** | **Cordes Trenching1** | — | cordestrenching1.localsearch.com | (616) 785-5290 | Comstock Park | Directory template | Commercial service lead with credibility gap |
+| **36** | **A+ Plumbing & Mechanical Services** | — | aplumbingmechanicalservices.localsearch.com | (616) 788-8211 | Allegan | Directory template | Good fit for call-first local-web upgrade |
+| **37** | **Borst Excavating** | — | borstexcavating.localsearch.com | (269) 673-2193 | Allegan | Directory template | Established local operator; weak digital presence |
+| **38** | **Valentine Excavating** | — | valentineexcavatingmi.localsearch.com | (269) 673-1865 | Allegan | Directory template | Contactable and below modern web standards |
+
+---
+
 ## QUICK STATS
 
 | Metric | Count | Notes |
 | :--- | :--- | :--- |
-| **Total Leads** | 23 | 8 machining + 15 multi-trade |
-| **Geographic Spread** | Muskegon (10), Holland (4), Grand Rapids/Hudsonville (5), Lansing (1) | West Michigan focus, lower peninsula |
-| **Trades Represented** | 7 | Machining, Welding, Auto Body, Concrete, Construction, Excavation, Roofing, HVAC/Plumbing |
+| **Total Leads** | 38 | 8 machining + 30 multi-trade |
+| **Geographic Spread** | Muskegon, Holland, Grand Rapids/Hudsonville, Comstock Park, Allegan, Lansing area | West Michigan-focused list with expansion into Allegan County |
+| **Trades Represented** | 8 | Machining, Welding, Auto Body, Concrete, Construction, Excavation/Trenching, Roofing, HVAC/Plumbing |
 | **Tier 1 (Email)** | 8 | Start with these (Section A tier 1 + Section B with verified emails) |
-| **Tier 2 (Phone)** | 14 | Follow-up round (all Section B + A tier 2 phone-only) |
+| **Tier 2 (Phone)** | 29 | Follow-up round (Sections B/C + A tier 2 phone-first leads) |
 | **Web Status: No Website** | 1 | Specialty Concrete (immediate win candidate) |
-| **Web Status: Basic/Outdated** | 12 | Most need modern redesign + professional photos |
-| **Web Status: Good foundation** | 9 | Have sites but need better portfolio photography |
+| **Web Status: Basic/Outdated/Directory** | 27+ | Large majority need modern redesign + professional photos |
+| **Web Status: Good foundation** | 9 | Have sites but still benefit from better portfolio and conversion UX |
 
 ---
 
