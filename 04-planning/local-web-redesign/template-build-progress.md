@@ -182,3 +182,36 @@ python3 -m http.server 3000
 ## Build Complete ✓
 
 Template is ready to use. All features tested and working. Documentation complete.
+
+---
+
+## 2026-04-23 Update: Quantum Legacy-Content Rebuild (Pitch Version)
+
+Objective in this pass: keep the template structure, but replace generic filler with real Quantum legacy content and media so the mockup feels like "your existing site, rebuilt."
+
+### Completed in `/home/blake/web-template-builder`
+
+- Rebuilt `index.html` around Quantum's actual legacy messaging:
+  - "Licensed Concrete Contractor"
+  - "Serving Western Michigan since 1996"
+  - real service list categories from current site
+  - real address and phone
+- Replaced generic placeholders with legacy media pulled from `quantumconcrete.com/assets/*`:
+  - `DSC04632.JPG`
+  - `DSC_0350.JPG`
+  - `quantumphoto54.jpg`
+  - `quantumphoto59.jpg`
+  - `quantumphoto328835.jpg`
+  - logo image `asset-1515963535786.png`
+- Upgraded conversion UX:
+  - tap-to-call CTAs in header, hero, contact, and footer
+  - sticky mobile call/estimate bar
+  - clearer proof-first trust strip and services grid
+- Removed misleading demo behavior:
+  - deleted fake JS alert form handling
+  - form now clearly marked as demo behavior (`mailto`) until final inbox routing is configured
+
+### Current pitch readiness
+
+- Ready for mockup demo link and cold outreach.
+- Next implementation step before any production launch: wire estimate form to real inbox/CRM endpoint.
