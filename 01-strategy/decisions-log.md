@@ -216,3 +216,11 @@
   - Secondary focus: Continue MLS discovery interviews with realtors when time permits.
   - Doc: Updated [03-discovery/local-web-redesign/west-michigan-lead-list.md](../03-discovery/local-web-redesign/west-michigan-lead-list.md) with 22 leads (8 machining + 14 multi-trade), phased outreach sequence.
   - Next action: Execute Tier 1 outreach to web redesign leads (email + phone). Test subscription model ($200/mo recurring) with first warm lead. Continue MLS validation work in parallel.
+
+- Decision: Shift web redesign go-to-market strategy: pre-build mockups before cold outreach, use them as primary pitch vehicle.
+  - Rationale: "I already built you a mockup" is stronger than "let me audit your site." Reduces friction for customer, shows confidence, allows faster close. Claude Code enables fast mockup builds (2-3 hours template + 1 hour per customization). Reusable template can be tweaked per industry/customer. First customer gets a near-finished site (80% built already). Mockup doubles as portfolio for future sales.
+  - Business model adjustment: $750-$1500 upfront (not $3k) + $95-$150/mo (not $200/mo). Lower price point reduces sticker shock for small trades, still healthy recurring revenue.
+  - Tech stack decision: Static HTML/CSS/JS (not React). Rationale: Speed (2-3 hours to build template), cost (cheap hosting), performance (fast load times), customization ease (edit HTML, not components), maintenance (minimal). Vanilla JS is plenty for modern, smooth, professional sites (galleries, animations, forms, etc). React adds complexity without benefit at this stage.
+  - Workflow: Build template → Customize for Quantum Concrete → Deploy mockup → Pitch with link → Close → Iterate based on feedback.
+  - Next action: Start template build with Claude Code. Target: Ready to pitch Quantum Concrete by end of this week.
+  - Docs: [04-planning/local-web-redesign/template-architecture.md](../04-planning/local-web-redesign/template-architecture.md), [04-planning/local-web-redesign/template-build-roadmap.md](../04-planning/local-web-redesign/template-build-roadmap.md), and updated [03-discovery/local-web-redesign/west-michigan-lead-list.md](../03-discovery/local-web-redesign/west-michigan-lead-list.md) (Quantum Concrete added as lead #16, prioritized as first target).
