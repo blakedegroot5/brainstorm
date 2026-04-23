@@ -6,10 +6,13 @@
 
 ## OPENING (30 seconds)
 
-### If reaching the OWNER:
+### If reaching PRECISION MACHINE SHOPS/TOOL MAKERS — OWNER:
 > "Hi [Name], this is Blake. I work with precision machine shops and tool makers in the area—I shoot professional photos of the work you do and build modern websites for shops that don't have one yet or are running something really outdated. Do you have 2 minutes?"
 
-### If reaching OFFICE ADMIN/Front-Desk:
+### If reaching TRADES (Concrete, Welding, Auto Body, etc.) — OWNER:
+> "Hi [Name], this is Blake. I saw your website—you've got 30 years of solid work in this area, but your site doesn't do it justice on mobile. A lot of my calls come through people finding me on their phones, and yours is pretty rough there. Do you have 2 minutes?"
+
+### If reaching OFFICE ADMIN/Front-Desk (any trade):
 > "Hi [Name], I'm Blake. I reach out to shops in Muskegon and Holland with professional photography and website services. Is this a good time for a quick question, or should I call back?"
 
 **If they say yes → move to DISCOVERY. If they say "no thanks" or "not interested" → ask for a better contact time and move on.**

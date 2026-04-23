@@ -1,6 +1,6 @@
 # West Michigan "No-Website" Lead List (Expanded)
 **Status:** Ready for outreach
-**Total Leads:** 22 (8 precision machining + 14 multi-trade)
+**Total Leads:** 23 (8 precision machining + 15 multi-trade)
 **Objective:** Move these shops from zero/minimal digital presence to a modern website + monthly hosting subscription.
 **Call Pitch:** "I shoot professional photos of your work + build a modern website. $3k upfront for photos + build. $200/mo for hosting + updates."
 
@@ -51,33 +51,34 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **14** | **Holland Concrete** | — | concrete-holland.com | (616) 310-5117 | Holland | Basic/minimal | Concrete, masonry, polishing, tuckpointing |
 | **15** | **Specialty Concrete Construction LLC** | — | None verified | (616) 994-8334 | Holland | **No website** | 15 years in business, diverse services |
+| **16** | **Quantum Concrete** | — | quantumconcrete.com (expired cert) | (616) 530-2444 | Grandville | **Broken/Outdated** | Licensed contractor, serving W. Michigan since 1996. Mobile-unfriendly, poor UX. HIGH PRIORITY — established customer base, obvious redesign pain. |
 
 ### B4: CONSTRUCTION & REMODELING
 
 | Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **16** | **Nelson Builders** | Josh Nelson | nelsonsbuild.com | (616) 335-9840 | Holland | Good but no portfolio photos | Est. 2001, award-winning, kitchen/bath specialist |
+| **17** | **Nelson Builders** | Josh Nelson | nelsonsbuild.com | (616) 335-9840 | Holland | Good but no portfolio photos | Est. 2001, award-winning, kitchen/bath specialist |
 
 ### B5: EXCAVATION & SITE WORK
 
 | Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **17** | **Epic Excavating** | — | epicexcavating.net | (616) 813-9596 | Grand Rapids/Hudsonville | Functional, some photos | Founded 2015, commercial + residential |
-| **18** | **Cutting Edge Excavating** | — | ceexcavating.net | (616) 662-9653 | Hudsonville | Functional | Family-owned (Nykamp), 35+ yrs combined exp |
+| **18** | **Epic Excavating** | — | epicexcavating.net | (616) 813-9596 | Grand Rapids/Hudsonville | Functional, some photos | Founded 2015, commercial + residential |
+| **19** | **Cutting Edge Excavating** | — | ceexcavating.net | (616) 662-9653 | Hudsonville | Functional | Family-owned (Nykamp), 35+ yrs combined exp |
 
 ### B6: ROOFING
 
 | Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **19** | **Free Spirit Construction** | — | freespiritconstruction.com | (231) 739-2124 | Muskegon | Basic | Family-owned since 2008, serves W. Michigan |
-| **20** | **Sherriff Goslin Roofing** | — | Verified but legacy | (231) 798-7772 | Muskegon/Lakeshore | Established brand | #1 roofing in Muskegon, est. 1925, 100+ yrs |
+| **20** | **Free Spirit Construction** | — | freespiritconstruction.com | (231) 739-2124 | Muskegon | Basic | Family-owned since 2008, serves W. Michigan |
+| **21** | **Sherriff Goslin Roofing** | — | Verified but legacy | (231) 798-7772 | Muskegon/Lakeshore | Established brand | #1 roofing in Muskegon, est. 1925, 100+ yrs |
 
 ### B7: HVAC & PLUMBING
 
 | Priority | Company Name | Contact | Email | Phone | City | Web Status | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **21** | **TMC Mechanical** | — | tmcmechanicalllc.com | (231) [verify] | Muskegon | Basic/minimal photos | Furnace, AC, heat pump service/repair |
-| **22** | **Lascko Services** | — | lasckoservices.com | [verify] | Muskegon | Functional, 4.9 rating | Family-owned, 20+ yrs, plumbing/HVAC/drain |
+| **22** | **TMC Mechanical** | — | tmcmechanicalllc.com | (231) [verify] | Muskegon | Basic/minimal photos | Furnace, AC, heat pump service/repair |
+| **23** | **Lascko Services** | — | lasckoservices.com | [verify] | Muskegon | Functional, 4.9 rating | Family-owned, 20+ yrs, plumbing/HVAC/drain |
 
 ---
 
@@ -85,7 +86,7 @@
 
 | Metric | Count | Notes |
 | :--- | :--- | :--- |
-| **Total Leads** | 22 | 8 machining + 14 multi-trade |
+| **Total Leads** | 23 | 8 machining + 15 multi-trade |
 | **Geographic Spread** | Muskegon (10), Holland (4), Grand Rapids/Hudsonville (5), Lansing (1) | West Michigan focus, lower peninsula |
 | **Trades Represented** | 7 | Machining, Welding, Auto Body, Concrete, Construction, Excavation, Roofing, HVAC/Plumbing |
 | **Tier 1 (Email)** | 8 | Start with these (Section A tier 1 + Section B with verified emails) |
@@ -131,10 +132,11 @@
 ## OUTREACH NOTES
 
 **Highest-Probability Targets (prioritize first):**
-1. **Specialty Concrete Construction** — no website (immediate pain point)
-2. **Lee's Collision** — 75 years in business, zero online presence
-3. **East River Machine** — warm lead with email
-4. **Holland Concrete** — basic site, clear upgrade path
+1. **Quantum Concrete** — broken/outdated site (expired SSL cert), 30-year established business, clear mobile UX pain. **FIRST CALL TARGET.**
+2. **Specialty Concrete Construction** — no website (immediate pain point)
+3. **Lee's Collision** — 75 years in business, zero online presence
+4. **East River Machine** — warm lead with email
+5. **Holland Concrete** — basic site, clear upgrade path
 
 **Pattern Observed:**
 - Established businesses (20–100+ years) with strong local reputation
