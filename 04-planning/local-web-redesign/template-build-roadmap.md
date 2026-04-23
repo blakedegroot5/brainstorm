@@ -168,6 +168,19 @@ Rationale:
 
 ---
 
+## Deployment Notes
+
+**Build folder:** `/home/blake/web-template-builder`
+
+**Port Requirements:**
+- Cannot use ports 80 or 443 (behind reverse proxy)
+- Use alternate ports for local dev/testing (e.g., 3000, 8000, 8080, 5000)
+- Production deployment: Use managed hosting (Vercel, Netlify) — no port management needed
+
+**For local testing:**
+- Test site on alternate port during build phase
+- Example: `python -m http.server 8000` or `npx http-server -p 8000`
+
 ## Notes for Claude Code
 
 - Use semantic HTML5 for structure
@@ -176,3 +189,4 @@ Rationale:
 - Optimize images before committing
 - Test on multiple devices/browsers before deployment
 - Use system fonts or minimal font-faces (performance)
+- Test locally on alternate port (not 80/443)
