@@ -102,3 +102,24 @@
 - Next step agreed (Site audit / Mockup / Call back date / Referral)
 - Any pain points they mentioned (slow web presence, outdated site, manual inquiries, etc.)
 - Referrals offered (ask every call: "Do you know anyone else in the area doing good work?")
+
+---
+
+## Quantum Concrete Owner Text Script (John)
+
+Goal: get a short call or permission to send mockup link. Keep texts short and direct.
+
+### Text 1 (first touch)
+> Hi John, Blake here in West Michigan. I rebuilt a quick mobile-first mockup using Quantum Concrete's current site content/photos so you can see what a cleaner version could look like. No pitch deck, just a direct preview. Open to a 10-15 min call this week so I can walk you through it?
+
+### Text 2 (follow-up #1, 2-3 days later)
+> Hi John, quick follow-up in case you missed my last note. I have the Quantum mockup ready and can show it in 10 minutes. If useful, I can also text the link first and you can review on your own time.
+
+### Text 3 (follow-up #2, final, 4-7 days later)
+> Last follow-up, John. If now isn't the right time, no worries and I'll close this out. If you want, I can still send the mockup link for future reference.
+
+### If John replies "send it"
+> Perfect. Here's the preview: [LINK]. If you're open, I can call for 10-15 minutes to get your feedback and tell you exactly what I'd change next.
+
+### If John says "busy"
+> Totally understand. What's better for you: a quick call next week, or should I just text the link and check back later?
