@@ -220,38 +220,42 @@ Objective in this pass: keep the template structure, but replace generic filler 
 
 ### Build work completed
 
-- Created a dedicated Essing's pre-build workspace in:
+- Created and updated dedicated Essings build workspace:
   - `/home/blake/web-template-builder-essings`
-- Reworked the template to auto-body-specific conversion structure:
-  - utility action rail
-  - tri-CTA hero
-  - trust/proof cards
-  - 4-step insurance/repair process section
-  - before/after slider interaction
-  - review + insurance-partner strip
-  - estimate form with damage chips + success state
-- Current files updated in Essings workspace:
-  - `index.html`
-  - `styles.css`
-  - `script.js`
+- Added auto-body-specific conversion stack inspired by current collision-site benchmarks:
+  - strong top rail + sticky CTAs
+  - collision-focused hero messaging
+  - trust/proof card strip
+  - repair-process section
+  - before/after comparison module
+  - FAQ + rotating testimonial behavior
+  - estimate form success state
+- Updated files:
+  - `/home/blake/web-template-builder-essings/index.html`
+  - `/home/blake/web-template-builder-essings/styles.css`
+  - `/home/blake/web-template-builder-essings/script.js`
 
 ### Server layout and conflict-avoidance convention
 
-- Keep each pre-build as a separate top-level directory with its own static server process.
+- Keep each pre-build isolated by directory + dedicated port + dedicated process name.
 - Current mapping:
   - Quantum: `/home/blake/web-template-builder` on `localhost:3000`
-  - Essings: `/home/blake/web-template-builder-essings` on `localhost:3002`
-- Essings server process is running via Python static server bound to 127.0.0.1 on port 3002.
+  - Essings source workspace: `/home/blake/web-template-builder-essings`
+  - Essings runtime deploy path: `/home/blake/server/prebuilds/essings-auto`
+  - Essings port: `localhost:3010`
+- Essings runtime process:
+  - `pm2` app name: `essings-prebuild`
+  - command: `python3 -m http.server 3010 --directory /home/blake/server/prebuilds/essings-auto`
 
 ### Caddy routing status
 
-- Live Caddy runtime config was reloaded with:
-  - `essings.jbdg.app -> reverse_proxy localhost:3002`
-- Local DNS resolution for `essings.jbdg.app` on this host is currently inconsistent, but host-header/SNI route test passes with:
-  - `curl --resolve essings.jbdg.app:443:127.0.0.1 https://essings.jbdg.app`
-- Repo-level Caddy reference file was also updated at:
-  - `/home/blake/landtrack/caddy/Caddyfile`
+- Active Caddy runtime config now maps:
+  - `essings.jbdg.app -> reverse_proxy localhost:3010`
+- Because `/etc/caddy/Caddyfile` is root-owned on this machine, the active reload was applied from:
+  - `/home/blake/server/caddy/Caddyfile`
+- Verification command:
+  - `curl --resolve essings.jbdg.app:443:127.0.0.1 https://essings.jbdg.app -k`
 
 ### Operational follow-up
 
-- Ensure permanent `/etc/caddy/Caddyfile` persistence is applied with admin access if runtime reload state is ever lost after service restart.
+- With admin access, mirror the same `essings.jbdg.app` block into `/etc/caddy/Caddyfile` so config survives any daemon restart that boots from system default file.
