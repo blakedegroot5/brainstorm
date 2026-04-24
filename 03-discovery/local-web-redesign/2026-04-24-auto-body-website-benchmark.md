@@ -4,6 +4,27 @@ Date: 2026-04-24
 Scope: 10 live collision/auto body websites + essings.com audit
 Goal: extract conversion-focused patterns we can implement in a static HTML/CSS/JS pre-build.
 
+## National/Regional Collision Sites (Actionable Pattern Pull)
+
+| Brand | URL | 2-3 patterns worth reusing on a pre-build page |
+|---|---|---|
+| Caliber | https://www.caliber.com/ | 1) Hero starts with location finder and immediate repair intent. 2) Dual high-intent CTAs (`Schedule Collision Repairs`, `Free Glass Estimate`). 3) Trust strip near top with rating, coverage footprint, and warranty messaging. |
+| Crash Champions | https://www.crashchampions.com/ | 1) Conversion-first hero with phone + booking path. 2) “Your Repair Experience” process breakdown to reduce anxiety. 3) Trust card grid with clear values and lifetime guarantee language. |
+| Gerber Collision & Glass | https://www.gerbercollision.com/online-repair-estimate | 1) Dedicated estimate flow page with state/location selection. 2) “Reviewed within one business day” expectation-setting copy. 3) Lifetime guarantee repeated as a persistent trust anchor. |
+| ABRA | https://www.abraauto.com/ | 1) Above-the-fold phone + location CTA pair. 2) Service cards that quickly segment intent (body, glass, PDR). 3) Location pages stack certifications + features + reviews in one scanable block. |
+| CARSTAR | https://www.carstar.com/ | 1) Hero headline + local finder immediately visible. 2) Store pages with side-by-side `Book Appointment` and `Photo Estimate`. 3) High-volume testimonial layout (star rating + review count + excerpts). |
+| Fix Auto USA | https://fixautousa.com/ | 1) Persistent header actions (`Call`, `Request Appointment`) that work like sticky CTAs. 2) Services grid with one-click “Find Nearest Location” actions. 3) Heavy quality proof section (I-CAR / third-party verification framing). |
+| Classic Collision | https://classiccollision.com/collision-repair-process/ | 1) Step-by-step repair timeline from drop-off to pickup. 2) Location pages with `View Reviews` + `Get a Photo Estimate` at top. 3) “Why Choose” page that groups communication, safety, and warranty in one trust narrative. |
+| Maaco | https://www.maaco.com/services/collision-repair/ | 1) Process-driven service sectioning (remove/replace, paint, finishing). 2) Price-anchoring via parts options (OEM/aftermarket/recycled) to pre-handle objections. 3) Standalone online estimator page for high-intent traffic capture. |
+
+## Direct Build Patterns for a Static Pre-Build Landing Page (HTML/CSS/JS)
+
+1. Build a split hero (`left`: value prop + trust chips, `right`: fast estimate form) and keep two primary CTAs visible on load: `Get Free Estimate` and `Call Now`.
+2. Add a sticky mobile CTA bar (`position: fixed; bottom: 0`) with two 50/50 buttons (`tel:` and estimate anchor/modal); hide on upward scroll and show on downward scroll with a small JS scroll-direction handler.
+3. Implement a 6-8 step process timeline using semantic ordered list markup (`ol > li`) and CSS counters; collapse to accordion cards under `768px`.
+4. Add before/after interaction with a lightweight slider: two stacked images, draggable range handle, and clip-path/width updates via pointer events (no library required).
+5. Use testimonial cards in a horizontal snap carousel (`display:flex; overflow-x:auto; scroll-snap-type:x mandatory`) with star rating, short quote, and source badge (Google/Carwise) for trust without heavy JS.
+
 ## Benchmark Sites (Strong Patterns)
 
 | Site | URL | What works (layout/content/UX) | Key visual patterns | Reusable HTML/CSS/JS ideas |
@@ -101,7 +122,20 @@ URL: https://essings.com/
 ## Sources
 
 - https://www.caliber.com/
+- https://www.caliber.com/services/collision
 - https://www.crashchampions.com/
+- https://crashchampions.com/our-process/repair-process
+- https://www.gerbercollision.com/online-repair-estimate
+- https://www.gerbercollision.com/our-guarantee
+- https://www.abraauto.com/
+- https://www.carstar.com/
+- https://www.carstar.com/locations/
+- https://fixautousa.com/
+- https://fixautousa.com/quality-assurance/
+- https://classiccollision.com/collision-repair-process/
+- https://classiccollision.com/why-choose-classic/
+- https://www.maaco.com/services/collision-repair/
+- https://www.maaco.com/online-estimator%21/
 - https://www.city-side.com/
 - https://www.kniesels.com/
 - https://grandcity.com/
