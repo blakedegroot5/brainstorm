@@ -224,3 +224,9 @@
   - Workflow: Build template → Customize for Quantum Concrete → Deploy mockup → Pitch with link → Close → Iterate based on feedback.
   - Next action: Start template build with Claude Code. Target: Ready to pitch Quantum Concrete by end of this week.
   - Docs: [04-planning/local-web-redesign/template-architecture.md](../04-planning/local-web-redesign/template-architecture.md), [04-planning/local-web-redesign/template-build-roadmap.md](../04-planning/local-web-redesign/template-build-roadmap.md), and updated [03-discovery/local-web-redesign/west-michigan-lead-list.md](../03-discovery/local-web-redesign/west-michigan-lead-list.md) (Quantum Concrete added as lead #16, prioritized as first target).
+
+## 2026-04-24
+
+- Decision: Use an auto-body conversion benchmark pack to drive Essings-style pre-build templates.
+  - Rationale: Live benchmarking across high-performing collision sites shows repeatable conversion patterns (dual CTAs, trust stacks, process timeline, warranty/certification proof, quote form, sticky mobile call-to-action) that can be adapted quickly in static HTML/CSS/JS.
+  - Next action: Build the first Essings Auto static template using the documented section order, style tokens, and interaction list in [03-discovery/local-web-redesign/2026-04-24-auto-body-website-benchmark.md](../03-discovery/local-web-redesign/2026-04-24-auto-body-website-benchmark.md).
