@@ -230,3 +230,8 @@
 - Decision: Use an auto-body conversion benchmark pack to drive Essings-style pre-build templates.
   - Rationale: Live benchmarking across high-performing collision sites shows repeatable conversion patterns (dual CTAs, trust stacks, process timeline, warranty/certification proof, quote form, sticky mobile call-to-action) that can be adapted quickly in static HTML/CSS/JS.
   - Next action: Build the first Essings Auto static template using the documented section order, style tokens, and interaction list in [03-discovery/local-web-redesign/2026-04-24-auto-body-website-benchmark.md](../03-discovery/local-web-redesign/2026-04-24-auto-body-website-benchmark.md).
+
+- Decision: Standardize each local-web pre-build as its own directory + dedicated localhost port, then map one domain per port in Caddy.
+  - Date: 2026-04-24
+  - Rationale: Isolates client mockups, prevents port/process conflicts between active pitch sites (for example Quantum and Essings), and keeps deployment/debugging simple for solo operations.
+  - Next action: Continue using a 1:1 mapping (`project directory` -> `localhost port` -> `jbdg subdomain`) for all new mockups.
