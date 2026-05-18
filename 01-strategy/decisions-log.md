@@ -241,3 +241,10 @@
   - Date: 2026-04-24
   - Rationale: Isolates client mockups, prevents port/process conflicts between active pitch sites (for example Quantum and Essings), and keeps deployment/debugging simple for solo operations.
   - Next action: Continue using a 1:1 mapping (`project directory` -> `localhost port` -> `jbdg subdomain`) for all new mockups.
+
+## 2026-05-18
+
+- Decision: Run a no-calls market scan for the web-to-PDF/report automation concept before any build or outbound call sprint.
+  - Rationale: Current execution constraint is low willingness for cold discovery calls; desk research can still de-risk niche selection by comparing role size, wage proxies, workflow pain indicators, and incumbent coverage.
+  - Next action: Time-box a 7-day no-calls validation sprint (pain-proxy dataset + competitor teardown + fake-door test) and only proceed if one niche shows repeatable workflow pain, weak incumbent fit, and a clear legal path.
+  - Doc: [03-discovery/no-calls-market-scan-2026-05-18.md](../03-discovery/no-calls-market-scan-2026-05-18.md)
